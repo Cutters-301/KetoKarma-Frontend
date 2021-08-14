@@ -17,8 +17,9 @@ class App extends React.Component {
        {/* {console.log(recipeData[0].name)} */}
         <Recipes
         recipeData={recipeData}
-      
+        
         />
+      
      </div>
     );
   }
