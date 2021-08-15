@@ -1,4 +1,5 @@
 import React from 'react';
+
 // import Recipes from 'src/component/Recipes';
 // import recipeData from 'src/recipe-data/recipe';
 // import Header from 'src/component/Header';
@@ -10,6 +11,7 @@ import Home from './pages/home';
 import { withAuth0 } from "@auth0/auth0-react";
 // import About from 'src/pages/about';
 
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,15 +22,19 @@ import {
   NavLink,
 
 } from "react-router-dom";
+
 // import SelectRecipe from 'src/pages/selectRecipe';
 // import about from 'src/pages/about';
+
 
 class App extends React.Component {
 
   render() {
     const { isAuthenticated } = this.props.auth0;
     return (
+
       <>
+
         <Router>
           <Switch>
 
@@ -45,6 +51,7 @@ class App extends React.Component {
           <Footer />
         </Router>
       </>
+
     );
   }
 }
