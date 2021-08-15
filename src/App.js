@@ -23,8 +23,11 @@ import {
 
 } from "react-router-dom";
 
+import about from './component/about';
+
 // import SelectRecipe from 'src/pages/selectRecipe';
 // import about from 'src/pages/about';
+
 
 
 class App extends React.Component {
@@ -32,6 +35,7 @@ class App extends React.Component {
   render() {
     const { isAuthenticated } = this.props.auth0;
     return (
+
 
       <>
 
@@ -51,6 +55,7 @@ class App extends React.Component {
           <Footer />
         </Router>
       </>
+
 
     );
   }
