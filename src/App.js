@@ -5,6 +5,9 @@ import React from 'react';
 import Footer from './component/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Home from './pages/home';
+// import Landing from './pages/landing';
+import { withAuth0 } from "@auth0/auth0-react";
 // import About from 'src/pages/about';
 
 import {
@@ -21,19 +24,29 @@ import {
 // import about from 'src/pages/about';
 
 class App extends React.Component {
- 
 
   render() {
+    const { isAuthenticated } = this.props.auth0;
     return (
-      
-         <>
+      <>
         <Router>
-       
-      <Footer />
-      </Router>
+          <Switch>
+
+            <Route exact path="/">
+              {
+                // !isAuthenticated
+                //   ? <Landing />
+                  // : 
+                  <Home />
+              }
+            </Route>
+          </Switch>
+
+          <Footer />
+        </Router>
       </>
     );
   }
 }
 
-export default App;
+export default withAuth0(App);
