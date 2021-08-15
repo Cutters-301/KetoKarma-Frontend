@@ -18,7 +18,7 @@ import {
   NavLink,
 
 } from "react-router-dom";
-import SelectRecipe from './component/selectRecipe';
+
 import about from './component/about';
 
 class App extends React.Component {
@@ -26,10 +26,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-       
-      
-    </div>
+      <>
+ 
+   </>
     );
   }
 }
