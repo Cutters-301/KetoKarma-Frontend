@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Team1 from '../assets/MyProfile-Image.jpeg';
 import Footer from '../component/Footer';
-import '../styling/aboutus.css'
+import '../styling/aboutUs.css'
 
 export class AboutUs extends Component {
     render() {

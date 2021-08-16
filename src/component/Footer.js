@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 // import { Logo } from "../assets/keto-logo.jpg"
 import '../styling/Footer.css'
 
+
 export class Footer extends Component {
     render() {
         return (
@@ -27,13 +28,12 @@ export class Footer extends Component {
 
                                 </ul>
                             </div>
-
                             <div class="col-xs-6 col-md-3">
                                 <h6>Quick Links</h6>
                                 <ul class="footer-links">
                                     <li> <Link to="/aboutus" ><a href={() => false}>About Us</a></Link></li>
                                     <li> <Link to="/recipe" ><a href={() => false}>Recipes</a></Link></li>
-                                    <li><Link to="/home" ><a href={() => false}>Home</a></Link></li>
+                                    <li><Link to="/" ><a href={() => false}>Home</a></Link></li>
                                     <li><Link to="/faqs" ><a href={() => false}>FAQs</a></Link></li>
                                     <li><a href="/#">LogOut</a></li>
                                 </ul>
@@ -48,7 +48,6 @@ export class Footer extends Component {
                                     <Link to="/home" ><a href={() => false}> KetoKarma</a></Link>
                                 </p>
                             </div>
-
                         </div>
                     </div>
                 </footer>
