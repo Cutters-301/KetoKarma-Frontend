@@ -14,6 +14,13 @@ import { withAuth0 } from '@auth0/auth0-react';
 import Home from './component/Home';
 // import Footer from './component/Footer';
 
+// import Recipes from 'src/component/Recipes';
+// import recipeData from 'src/recipe-data/recipe';
+// import Header from 'src/component/Header';
+import Footer from './component/Footer';
+// import Landing from './pages/landing';
+// import About from 'src/pages/about';
+
 
 import {
   BrowserRouter as Router,
@@ -28,6 +35,12 @@ import {
 } from "react-router-dom";
 // import SelectRecipe from './component/selectRecipe';
 // import about from './component/about';
+
+
+// import SelectRecipe from 'src/pages/selectRecipe';
+// import about from 'src/pages/about';
+
+
 
 class App extends React.Component {
 
