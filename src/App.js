@@ -7,6 +7,7 @@ import LoginButton from './component/LoginButton';
 import { withAuth0 } from '@auth0/auth0-react';
 import Home from './pages/Home';
 import About from './pages/Aboutus';
+import Nutrition from './pages/Nutrition';
 
 import {
   BrowserRouter as Router,
@@ -41,10 +42,10 @@ class App extends React.Component {
                 <About/>
               </Route>
               <Route exact path="/recipe" component={Recipes} />
-              {/* <Route exact path="/nutrition">
-                <Nutrtrition/>
+              <Route exact path="/nutrition">
+                <Nutrition/>
               </Route>
-              <Route exact path="/calculator">
+              {/* <Route exact path="/calculator">
                 <Calculator/>
               </Route> */}
             </Switch>
