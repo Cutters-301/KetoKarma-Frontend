@@ -1,24 +1,47 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
 
+
+  
 export class ShowRecipe extends Component {
+  
     render() {
-        console.log('recipe from show',this.props.allRecipes.hits);
+        console.log(this.props.allRecipes.hits !==undefined ? this.props.allRecipes.hits :'null');
         return (
-            <div>
-               {
-                //    this.props.allRecipes.map((recipe)=>{
-                //        return (
-                //            <div>
-                //                <h1>{recipe.label}</h1>
-                //                <img src={recipe.imgurl} alt=""/>
-                //            </div>
-                //        )
-                //    })
-               } 
+         
+             <Container>
+             <Row xs={1} md={3} className='g-4'>    
 
-            <h1>omaima</h1>
-            <p> {this.props.allRecipes.hits.label}</p>
-            </div>
+               { 
+
+                    this.props.allRecipes.hits !==undefined?
+                    this.props.allRecipes.hits.map((recipes,i)=>{
+                      
+                        
+                        return (
+                            <Col key={i}>
+                                <h1>{recipes.recipe.label}</h1>
+                                <img src={recipes.recipe.image} alt=""/>
+                                <p>{recipes.recipe.ingredientLines}</p>
+                                <p>{recipes.recipe.calories}</p>
+                                </Col>
+               
+               )
+               
+            })
+            :'null'
+            
+            
+        } 
+
+        </Row>
+     </Container> 
+               
+           
+           
         )
     }
 }
