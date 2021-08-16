@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
+import Footer from '../component/Footer';
 import { Card, Button, Row, Col, Carousel } from 'react-bootstrap';
-// import {
-//     MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBRow, MDBCol, MDBCard, MDBCardImage,
-//     MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn
-// } from "mdbreact";
+
 
 
 export class Home extends Component {
@@ -156,6 +154,7 @@ export class Home extends Component {
                         </Carousel.Item>
                     </Carousel>
                 </div>
+                <Footer />
             </div>
         )
     }
