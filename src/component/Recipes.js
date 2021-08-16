@@ -21,7 +21,7 @@ export class Recipes extends Component {
         console.log(recipe);
         console.log(mealType);
         const response = 
-        await axios.get(`https://api.edamam.com/search?q=${recipe}&app_id=${process.env.REACT_APP_ID}&app_key=${process.env.REACT_APP_KEY}&from=0&to=7&calories=591-722&mealType=${mealType}`);
+        await axios.get(`https://api.edamam.com/search?q=${recipe}&app_id=ee24950e&app_key=73c472644b670086c57734e05cd20b05&from=0&to=7&calories=591-722&mealType=${mealType}`);
         console.log(response.data)   
         this.setState({
             recipeData: response.data,
@@ -43,9 +43,9 @@ export class Recipes extends Component {
                 </select>
                 <input class='submit' type="submit" value="search recipe" />
             </form>
-                {console.log(recipeData)} 
+                {console.log('recipe file',recipeData)} 
             <div>
-               {!this.state.recipeData &&
+               { this.state.recipeData &&
                    <ShowRecipe
                 
                     allRecipes={this.state.recipeData}
