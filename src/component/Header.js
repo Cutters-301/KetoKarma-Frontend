@@ -39,11 +39,11 @@ class Header extends Component {
             <br />
             KETO RECIPES
           </Link>
-          <a href='/calculator'>
+          <Link exact to='/calculator'>
             <TiCalculator size='1.2em' />
             <br />
             CALCULATOR
-          </a>
+          </Link>
           <a href='/nutrition'>
             <VscPerson size='1.2em' />
             <br />
