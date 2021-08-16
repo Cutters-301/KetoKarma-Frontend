@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import { Card, Button, Row, Col, Carousel } from 'react-bootstrap';
-import Header from './Header';
-import Footer from './Footer';
-import Laptop from './laptop';
-// import {
-//     MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBRow, MDBCol, MDBCard, MDBCardImage,
-//     MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn
-// } from "mdbreact";
+import { Card, Row, Col, Carousel } from 'react-bootstrap';
+import Header from '../component/Header';
+import Footer from '../component/Footer';
+import Laptop from '../component/laptop';
+
 
 export class Home extends Component {
   render() {

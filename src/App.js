@@ -1,25 +1,11 @@
 import React from 'react';
-// import Recipes from './component/Recipes';
-// import recipeData from './recipe-data/recipe.json';
-// import Footer from './Footer';
+import Recipes from './pages/Recipes';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-// import About from './component/about';
-// import { Router } from 'react-router-dom';
-// import Header from './component/Header';
-// import Laptop from './component/laptop';
-import Profile from './Profile';
+import Profile from './pages/Profile';
 import LoginButton from './component/LoginButton';
 import { withAuth0 } from '@auth0/auth0-react';
-import Home from './component/Home';
-// import Footer from './component/Footer';
-
-// import Recipes from 'src/component/Recipes';
-// import recipeData from 'src/recipe-data/recipe';
-// import Header from 'src/component/Header';
-import Footer from './component/Footer';
-// import Landing from './pages/landing';
-// import About from 'src/pages/about';
+import Home from './pages/Home';
 
 
 import {
@@ -33,12 +19,6 @@ import {
   // NavLink,
 
 } from "react-router-dom";
-// import SelectRecipe from './component/selectRecipe';
-// import about from './component/about';
-
-
-// import SelectRecipe from 'src/pages/selectRecipe';
-// import about from 'src/pages/about';
 
 
 
@@ -57,6 +37,16 @@ class App extends React.Component {
               <Route exact path="/profile">
                 <Profile/>
               </Route>
+              {/* <Route exact path="/about-us">
+                <About/>
+              </Route> */}
+              <Route exact path="/recipe" component={Recipes} />
+              {/* <Route exact path="/nutrition">
+                <Nutrtrition/>
+              </Route>
+              <Route exact path="/calculator">
+                <Calculator/>
+              </Route> */}
               {/* TODO: add a route with a path of '/profile' that renders a `Profile` component */}
             </Switch>
         </Router>

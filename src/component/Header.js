@@ -29,22 +29,22 @@ class Header extends Component {
           <img src={Logo} alt="logo" style={{width:"20%" , marginTop:"-90px"}} />
           </div> */}
         <div id='navbar'>
-            <a href='#home'>
+            <a href='/'>
             <BsBoxArrowInDown size='1.2em' />
             <br />
             HOME
             </a>
-          <a href='#home'>
+          <Link exact to='/recipe'>
             <GiKnifeFork size='1.2em' />
             <br />
             KETO RECIPES
-          </a>
-          <a href='#news'>
+          </Link>
+          <a href='/calculator'>
             <TiCalculator size='1.2em' />
             <br />
             CALCULATOR
           </a>
-          <a href='#contact'>
+          <a href='/nutrition'>
             <VscPerson size='1.2em' />
             <br />
             NUTRITIONIST
