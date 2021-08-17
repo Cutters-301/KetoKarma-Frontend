@@ -90,6 +90,7 @@ export class Calculator extends Component {
         return (
             <div>
                 <Header />
+                <center>
                 <form onSubmit={this.calculateCalories}>
                     <input type="checkbox" id="toggle" class="toggle--checkbox"/>
                         <label for="toggle" class="toggle--label">
@@ -134,6 +135,7 @@ export class Calculator extends Component {
                         </div>
                     </div> */}
                 </form>
+                </center>
                     <div class="progress">
                         <div class="progress-value1">
                             <p class='info'>Calories </p>
