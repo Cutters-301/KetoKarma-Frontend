@@ -35,7 +35,7 @@ class App extends React.Component {
               {this.props.auth0.isAuthenticated && <LoginButton/>}
               </Route>
               <Route exact path="/profile">
-                <Profile/>
+              {this.props.auth0.isAuthenticated && <Profile/>}
               </Route>
               {/* <Route exact path="/about-us">
                 <About/>
