@@ -32,5 +32,10 @@ Users will be able to make their own plans.
 1. Security: Login requirments. The user need to log in the website in order to have a profile page to insert inside it the plan and their data.
 2. Availability: the website is available any the time the user is requesting it.
 
+## Schema Diagram
+
+![Untitled](https://user-images.githubusercontent.com/64333354/129672261-f7a20e79-3bdd-4a9b-bcdf-d563fcd077e9.png)
+
+
 [Project managment](https://trello.com/b/jfNtolxm/reading)
 
