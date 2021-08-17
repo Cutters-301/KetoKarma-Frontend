@@ -31,11 +31,11 @@ export class Footer extends Component {
                             <div class="col-xs-6 col-md-3">
                                 <h6>Quick Links</h6>
                                 <ul class="footer-links">
-                                    <li> <Link to="/aboutus" ><a href={() => false}>About Us</a></Link></li>
-                                    <li> <Link to="/recipe" ><a href={() => false}>Recipes</a></Link></li>
-                                    <li><Link to="/" ><a href={() => false}>Home</a></Link></li>
+                                    <li> <Link exact to="/aboutus" >About Us</Link></li>
+                                    <li> <Link  exact to="/recipe" >Recipes</Link></li>
+                                    <li><Link exact  to="/" >Home</Link></li>
                                     <li><Link to="/faqs" ><a href={() => false}>FAQs</a></Link></li>
-                                    <li><a href="/#">LogOut</a></li>
+                                    <li ><a href="/#">LogOut</a></li>
                                 </ul>
                             </div>
                         </div>

@@ -3,7 +3,8 @@ import '../styling/recipe.css';
 import axios from 'axios';
 import ShowRecipe from '../component/ShowRecipe';
 import Header from '../component/Header';
-import Footer from '../component/Footer'
+import Footer from '../component/Footer';
+import { AiOutlineSearch } from "react-icons/bs";
 
 
 // I Can access the data in onther component using (props.location.state)
@@ -13,7 +14,7 @@ export class Recipes extends Component {
         this.state = {
             recipeData: {},
             health: {},
-            defaultData:{},
+            defaultData: {},
 
         }
     }
@@ -32,64 +33,81 @@ export class Recipes extends Component {
         });
     }
 
-  
-      getDefaultRecipe=async()=>{
-        const response= await axios.get(`https://api.edamam.com/search?q=meat&app_id=ee24950e&app_key=73c472644b670086c57734e05cd20b05&from=0&to=3&calories=591-722&health=keto-friendly`);
+
+    getDefaultRecipe = async () => {
+        const response = await axios.get(`https://api.edamam.com/search?q=meat&app_id=ee24950e&app_key=73c472644b670086c57734e05cd20b05&from=0&to=3&calories=591-722&hhealthLabels`);
         this.setState({
             defaultData: response.data
-            
+
         });
-        
+
     }
-    componentDidMount(){
-        this.getDefaultRecipe();}
+    componentDidMount() {
+        this.getDefaultRecipe();
+    }
 
     render() {
 
         // getDefaultRecipe()
         return (
             <>
-            <Header />
-            <div class='recipe'>
-                {console.log('recipe', this.state.recipeData)}
-                <h1 > Recipe</h1>
-                {/* <head>
+                <Header />
+                <div class='recipe'>
+                    {console.log('recipe', this.state.recipeData)}
+                    <h1 > Recipe</h1>
+                    {/* <head>
                     <meta charset="UTF-8" />
                     <link rel="stylesheet" href="style.css" />
                     <link rel="stylesheet" href="fontawesome-free-5.15.1/css/all.css" />
                     <title>Search</title>
                     <script src="https://kit.fontawesome.com/afd6aa68df.js" crossorigin="anonymous"></script>
                 </head> */}
-                <body>
-                    <div class="box">
-                        <form name="search" onSubmit={this.submitForm}>
-                            <input type="text" class="input" name="recipeName"
-                            />
-                            <select class='meal' name='mealTypeForm'>
+                    <body>
+                        <div class="box">
+                            <form name="search" onSubmit={this.submitForm}>
+                                <input type="text" class="input" name="recipeName"
+                                />
+                                {/* <select class='meal' name='mealTypeForm'>
                                 <option value='Breakfast'>Breakfast</option>
                                 <option value='Lunch'>Lunch</option>
                                 <option value='Dinner'>Dinner</option>
                                 <option value='Snack'>Snack</option>
-                            </select>
-                            <input class='submit' type="submit" value="search recipe" />
+                            </select> */}
+                                <label class="custom-select" for="styledSelect1"><select id="styledSelect1" name="mealTypeForm">
+                                    
+                                    <option value="Breakfast">
+                                    Breakfast 
+                                    </option>
+                                    <option value="Lunch">
+                                         Lunch
+                                    </option>
+                                    <option value="Dinner">
+                                         Dinner
+                                    </option>
+                                    <option value="Snack">
+                                         Snack
+                                    </option>
+                                </select></label>
+                                {/* <AiOutlineSearch /> */}
+                                <input class='submit' type="submit" />
 
-                        </form>
-                        {/* <i class="fas fa-search"></i> */}
-                    </div>
+                            </form>
+                            {/* <i class="fas fa-search"></i> */}
+                        </div>
 
-                <div>
-                {/* {console.log('jjjjjjjjjjjjjjjjjj',this.state.defaultData)} */}
-                {this.state.recipeData &&
-                    <ShowRecipe
-                    
-                    allRecipes={this.state.recipeData}
-                    // defaultData={this.state.defaultData}
-                 
-                    />
-                }
-                </div>
-                </body>
-                {/* <form className="form" onSubmit={this.submitForm}>
+                        <div>
+                            {/* {console.log('jjjjjjjjjjjjjjjjjj',this.state.defaultData)} */}
+                            {this.state.recipeData &&
+                                <ShowRecipe
+
+                                    allRecipes={this.state.recipeData}
+                                // defaultData={this.state.defaultData}
+
+                                />
+                            }
+                        </div>
+                    </body>
+                    {/* <form className="form" onSubmit={this.submitForm}>
                 <input class='input' type='text' placeholder='enter ingridient' name='recipeName' />
                 <select class='meal' name='mealTypeForm'> 
                 <option value='Breakfast'>Breakfast</option>
@@ -99,8 +117,8 @@ export class Recipes extends Component {
                 </select>
             </form> */}
 
-                <br />
-            </div>
+                    <br />
+                </div>
                 <Footer />
             </>
         )

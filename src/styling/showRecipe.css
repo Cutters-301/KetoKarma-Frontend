@@ -68,6 +68,8 @@ body {
     h3:hover:after, h3.active:after {
      width: 100%; 
     }
+
+    
   
   
   @media (min-width:599px) {
@@ -78,3 +80,6 @@ body {
       column-count: 2
     }
   }
+
+
+  
