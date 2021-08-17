@@ -91,7 +91,12 @@ export class Calculator extends Component {
             <div>
                 <Header />
                 <form onSubmit={this.calculateCalories}>
-                    <div class="shade">
+                    <input type="checkbox" id="toggle" class="toggle--checkbox"/>
+                        <label for="toggle" class="toggle--label">
+                            <span class="toggle--label-background"></span>
+                        </label>
+                        <div class="background"></div>
+                        {/* <div class="shade">
                         <div class="blackboard">
                             <div class="form">
                                 <p>
@@ -127,28 +132,28 @@ export class Calculator extends Component {
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </form>
-                <div class="progress">
-                    <div class="progress-value1">
-                        <p class='info'>Calories </p> 
-                    </div> <br/>
-                    <div class="progress-value2">
-                        <p class='info'>Protin </p> 
-                    </div> <br/>
-                    <div class="progress-value3">
-                        <p class='info'>Carbs </p> 
-                    </div> <br/>
-                    <div class="progress-value4">
-                        <p class='info'>Fats </p>
+                    <div class="progress">
+                        <div class="progress-value1">
+                            <p class='info'>Calories </p>
+                        </div> <br />
+                        <div class="progress-value2">
+                            <p class='info'>Protin </p>
+                        </div> <br />
+                        <div class="progress-value3">
+                            <p class='info'>Carbs </p>
+                        </div> <br />
+                        <div class="progress-value4">
+                            <p class='info'>Fats </p>
+                        </div>
                     </div>
-                </div>
-                <br/>
+                    <br />
 
-                <Footer />
+                    <Footer />
             </div>
-        )
+                )
     }
 }
 
-export default Calculator;
+                export default Calculator;
