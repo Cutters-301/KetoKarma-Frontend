@@ -8,7 +8,7 @@ import { withAuth0 } from '@auth0/auth0-react';
 import Home from './pages/Home';
 import About from './pages/Aboutus';
 import Nutrition from './pages/Nutrition';
-
+import Calculator from './pages/calculator';
 import {
   BrowserRouter as Router,
   Switch,
@@ -45,9 +45,8 @@ class App extends React.Component {
               <Route exact path="/nutrition">
                 <Nutrition/>
               </Route>
-              {/* <Route exact path="/calculator">
-                <Calculator/>
-              </Route> */}
+              <Route exact path="/calculator" component={Calculator} />
+              
             </Switch>
         </Router>
       </>
