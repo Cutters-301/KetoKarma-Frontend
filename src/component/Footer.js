@@ -31,9 +31,13 @@ export class Footer extends Component {
                             <div class="col-xs-6 col-md-3">
                                 <h6>Quick Links</h6>
                                 <ul class="footer-links">
+
+                                
+
                                     <li> <Link exact to="/aboutus" >About Us</Link></li>
                                     <li> <Link  exact to="/recipe" >Recipes</Link></li>
                                     <li><Link exact  to="/" >Home</Link></li>
+
                                     <li><Link to="/faqs" ><a href={() => false}>FAQs</a></Link></li>
                                     <li ><a href="/#">LogOut</a></li>
                                 </ul>
@@ -45,7 +49,7 @@ export class Footer extends Component {
                         <div class="row">
                             <div class="col-md-8 col-sm-6 col-xs-12">
                                 <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by
-                                    <Link to="/home" ><a href={() => false}> KetoKarma</a></Link>
+                                    <a href="#top"> KetoKarma</a>
                                 </p>
                             </div>
                         </div>
