@@ -109,10 +109,7 @@ export class Calculator extends Component {
         console.log(this.state.toggle)
         return (
             <div>
-                <Header />
-
-
-
+                
                 <Form style={{ border: '5px solid rgb(92, 83, 83)', 'margin-top': '20px', 'margin-bottom': '20px', padding: '15px' }} noValidate onSubmit={this.calculateCalories}>
                     <Row className="mb-3">
                         <div class = 'container'>
@@ -225,10 +222,6 @@ export class Calculator extends Component {
 Based on your inputs, we suggest you eat: {parseInt(this.state.calories)} calories. From those, {parseInt(this.state.fat)}g fats, {parseInt(this.state.carbs)}g net carbs, and {parseInt(this.state.protin)}g protein.
 </p>
                 </div>
-
-
-
-                <Footer />
             </div>
         )
     }

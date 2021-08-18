@@ -58,7 +58,6 @@ export class Nutrition extends Component {
     render() {
         return (
             <div>
-                <Header />
                 <h1 style={{ fontFamily: "'Style Script',cursive", textAlign: "center", fontSize: "50px", fontWeight: "bold", color: "rgba(39, 134, 44, 0.8)", marginTop: "40px" }} >Our Nutritionists</h1>
                 <div className="container">
                     <Card className="cardD"
@@ -373,7 +372,6 @@ export class Nutrition extends Component {
                     />
                    
                 </div>
-                <Footer />
             </div>
         )
     }

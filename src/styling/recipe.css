@@ -1,16 +1,4 @@
-/* body{
-    margin: 0; 
-    padding: 0;
-    background: #140f1d;
-   
-}
-/* .box{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-} */
-/* @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Indie+Flower&family=Open+Sans&display=swap'); */
+
 .input {
     padding: 10px;
     width: 80px;
@@ -46,17 +34,14 @@ i{
 
 .custom-select {
     position: relative;
-    /* display: block; */
     max-width: 400px;
     min-width: 180px;
     margin: 0 auto;
     border: 1px solid #3C1C78;
     background-color: #a7b8b9;
-    /* padding-right: 400px; */
     margin-left: 30px;
     border-radius:10px
 
-    /* z-index: 10; */
   }
   .custom-select select {
     border: none;
@@ -87,11 +72,7 @@ i{
     border-left: 1px solid #3C1C78;
     z-index: -1;
   }
-/*   
-  body {
-    margin-top: 80px;
-    background-color: #1A004A;
-  } */
+
 
 .submit{
     margin-left: 30px;
@@ -105,7 +86,7 @@ i{
   display: inline-block;
   text-align: center;
   padding-left: 40%;
-  font-size: 12px;
+  font-size: 30px;
   font-family: 'Open Sans', sans-serif;
 }
 

@@ -34,16 +34,16 @@ class Header extends Component {
             <br />
             HOME
             </a>
-          <Link exact to='/recipe'>
+          <a href='/recipe'>
             <GiKnifeFork size='1.2em' />
             <br />
             KETO RECIPES
-          </Link>
-          <Link exact to='/calculator'>
+          </a>
+          <a href='/calculator'>
             <TiCalculator size='1.2em' />
             <br />
             CALCULATOR
-          </Link>
+          </a>
           <a href='/nutrition'>
             <VscPerson size='1.2em' />
             <br />
@@ -51,10 +51,10 @@ class Header extends Component {
           </a>
           <Router>
           {isAuthenticated ? <>
-        <Link to="/profile">
+        <a href="/profile">
         <CgProfile size='1.2em' />
         <br />    
-        Profile</Link>
+        Profile</a>
         <LogoutButton style={{marginLeft:"90%"}}/> </> : <LoginButton/> }
         </Router>
         </div>

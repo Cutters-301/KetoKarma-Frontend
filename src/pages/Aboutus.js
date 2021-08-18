@@ -8,7 +8,6 @@ export class AboutUs extends Component {
     render() {
         return (
             <div className="body" >
-                <Header />
                 <div className="aboutUs">
                     <div className="mission">
                         <h1 className="title"><span>Our Mission</span></h1>
@@ -115,7 +114,6 @@ export class AboutUs extends Component {
                         </div>
                     </div>
                 </div>
-                <Footer />
             </div>
         )
     }

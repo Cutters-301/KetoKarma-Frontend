@@ -34,11 +34,10 @@ export class Footer extends Component {
 
                                 
 
-                                    <li class="ref"> <Link exact to="/aboutus" >About Us</Link></li>
-                                    <li class="ref"> <Link  exact to="/recipe" >Recipes</Link></li>
-                                    <li class="ref"><Link exact  to="/" >Home</Link></li>
-
-                                    <li class="ref"><Link to="/faqs" ><a href={() => false}>FAQs</a></Link></li>
+                                    <li class="ref"> <a href="/aboutUs" >About Us</a></li>
+                                    <li class="ref"> <a href="/recipe" >Recipes</a></li>
+                                    <li class="ref"><a href="/" >Home</a></li>
+                                    {/* <li class="ref"><Link to="/faqs" ><a href={() => false}>FAQs</a></Link></li> */}
                                     <li class="ref"><a href="/#">LogOut</a></li>
                                 </ul>
                             </div>

@@ -9,7 +9,9 @@ import Home from './pages/Home';
 import About from './pages/Aboutus';
 import Nutrition from './pages/Nutrition';
 import Calculator from './pages/calculator';
-
+import Header from "./component/Header";
+import AboutUs from "./pages/Aboutus"
+import Footer from "./component/Footer"
 import {
   BrowserRouter as Router,
   Switch,
@@ -25,8 +27,10 @@ class App extends React.Component {
   render() {
     return (
       <>
-       
+       <Header/>
+
          <Router>
+           
             <Switch>
               <Route exact path="/">
               <Home />
@@ -43,8 +47,11 @@ class App extends React.Component {
                 <Nutrition/>
               </Route>
               <Route exact path="/calculator" component={Calculator} />
+              <Route exact path="/aboutUs" component={AboutUs} />
+              
             </Switch>
         </Router>
+        <Footer/>
       </>
       
     );
