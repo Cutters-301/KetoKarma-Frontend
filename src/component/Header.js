@@ -5,19 +5,11 @@ import { TiCalculator } from 'react-icons/ti';
 import { VscPerson } from 'react-icons/vsc';
 import { BsBoxArrowInDown } from 'react-icons/bs';
 import {CgProfile} from 'react-icons/cg';
-import { Link } from "react-router-dom";
 import LogoutButton from './LogoutButton';
 import { withAuth0 } from '@auth0/auth0-react';
-import Logo from '../assets/log.png';
 import LoginButton from './LoginButton';
 import {
     BrowserRouter as Router,
-    Switch,
-    Route,
-    useHistory,
-    withRouter,
-    NavLink,
-  
   } from "react-router-dom";
 
 class Header extends Component {

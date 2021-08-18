@@ -62,7 +62,7 @@ button:hover{
     position: fixed; /* Make it stick/fixed */
     top: -3px; /* Hide the navbar 50 px outside of the top view */
     width: 97.3%; /* Full width */
-    transition: top 10s; /* Transition effect when sliding down (and up) */
+    /* transition: top 10s; Transition effect when sliding down (and up) */
     padding-left:40%;
     height: 100px;
 	z-index: 50;

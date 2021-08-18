@@ -87,7 +87,7 @@ export class Home extends Component {
         <div
           style={{
             background:
-              '#ffffff url(//www.ruled.me/wp-content/themes/genesis-child/sections/homepage/img/divider.png) no-repeat scroll 0 0 / 100% 100%',
+              'whitesmoke url(//www.ruled.me/wp-content/themes/genesis-child/sections/homepage/img/divider.png) no-repeat scroll 0 0 / 100% 100%',
             height: '10rem',
             marginTop: '-15px',
             marginBottom: '40px',
@@ -123,7 +123,7 @@ export class Home extends Component {
               >
                 <Card.Img    style={{ height: '190px' }}
                   variant='top'
-                  src='https://www.tricitymed.org/wp-content/uploads/2018/01/shutterstock_627075779-300x200.jpg'
+                  src='https://images.unsplash.com/photo-1561043433-aaf687c4cf04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80'
                 />
                 <Card.Body>
                   <Card.Title
@@ -158,7 +158,7 @@ export class Home extends Component {
                 <Card.Img
                   style={{ height: '190px' }}
                   variant='top'
-                  src='https://images.lifealth.com/uploads/2017/11/Diabetes.jpg'
+                  src='https://images.unsplash.com/photo-1533622597524-a1215e26c0a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80'
                 />
                 <Card.Body>
                   <Card.Title
@@ -254,13 +254,7 @@ export class Home extends Component {
           </Row>
         </div>
         <div
-          style={{
-            background:
-              '#ffffff url(//www.ruled.me/wp-content/themes/genesis-child/sections/homepage/img/divider.png) no-repeat scroll 0 0 / 100% 100%',
-            height: '10rem',
-            marginTop: '30px',
-            marginBottom: '70px',
-          }}
+       
         >
           <h1
             style={{
@@ -268,7 +262,7 @@ export class Home extends Component {
               padding: '55px',
               marginLeft: '4%',
               fontFamily: "'Style Script', cursive",
-              color: 'whitesmoke',
+              color:"black",
             }}
           >
             Keto Diet Success Stories
@@ -281,11 +275,12 @@ export class Home extends Component {
               marginTop: '20px',
               marginBottom: '30px',
               width: '75%',
+              height:'550px'
             }}
           >
             <Carousel.Item>
               <img
-                style={{ height: '450px', width: '100px' }}
+                style={{ height: '550px', width: '100px' }}
                 className='d-block w-100'
                 src='https://cdn.ruled.me/wp-content/uploads/2019/10/ElenaJuarez_SuccessBody.jpg'
                 alt='Third slide'
@@ -319,7 +314,7 @@ export class Home extends Component {
             </Carousel.Item>
             <Carousel.Item>
               <img
-                style={{ height: '450px', width: '100px' }}
+                style={{ height: '550px', width: '100px' }}
                 className='d-block w-100'
                 src='https://cdn.ruled.me/wp-content/uploads/2019/10/StefanReich_SuccessBody1.jpg'
                 alt='First slide'
@@ -352,7 +347,7 @@ export class Home extends Component {
             </Carousel.Item>
             <Carousel.Item>
               <img
-                style={{ height: '450px', width: '100px' }}
+                style={{ height: '550px', width: '100px' }}
                 className='d-block w-100'
                 src='https://cdn.ruled.me/wp-content/uploads/2019/10/LesleePascal_SuccessBody.jpg'
                 alt='Second slide'
@@ -386,7 +381,7 @@ export class Home extends Component {
             </Carousel.Item>
             <Carousel.Item>
               <img
-                style={{ height: '450px', width: '100px' }}
+                style={{ height: '550px', width: '100px' }}
                 className='d-block w-100'
                 src='https://cdn.ruled.me/wp-content/uploads/2019/10/JasonYoungdell_SuccessFinal.jpg'
                 alt='Third slide'
@@ -420,7 +415,7 @@ export class Home extends Component {
             </Carousel.Item>
             <Carousel.Item>
               <img
-                style={{ height: '450px', width: '100px' }}
+                style={{ height: '550px', width: '100px' }}
                 className='d-block w-100'
                 src='https://cdn.ruled.me/wp-content/uploads/2019/10/GillianBredenhann_SuccessFinal.jpg'
                 alt='Third slide'
