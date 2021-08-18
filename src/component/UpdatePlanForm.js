@@ -25,23 +25,23 @@ render() {
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Label>Book Description</Form.Label>
+                                <Form.Label>Lunch</Form.Label>
                                 <Form.Control  name="lunch" defaultValue={this.props.updateplanObj.Lunch}
                                type="text"  />
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Label>Status</Form.Label>
+                                <Form.Label>Dinner</Form.Label>
                                 <Form.Control type="text"  name="dinner"  defaultValue={this.props.updateplanObj.Dinner}  />
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Label>Status</Form.Label>
+                                <Form.Label>Fruits</Form.Label>
                                 <Form.Control type="text"  name="fruits"  defaultValue={this.props.updateplanObj.Fruits}  />
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Label>Status</Form.Label>
+                                <Form.Label>Vegetables</Form.Label>
                                 <Form.Control type="text"  name="vegetables"  defaultValue={this.props.updateplanObj.Vegetables}  />
                             </Form.Group>
 
