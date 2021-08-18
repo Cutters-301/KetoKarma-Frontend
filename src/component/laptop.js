@@ -4,7 +4,7 @@ import ReactPlayer from "react-player";
 export class Laptop extends Component {
     render() {
         return (
-            <div style={{marginRight:"30%"}}>
+            <div style={{marginLeft: "7%", marginRight: "7%", marginBottom: "10%"}}>
                  <div className='container'>
           <div className='mockup mockup-macbook loaded opened'>
             <div className='part top'>
@@ -19,7 +19,9 @@ export class Laptop extends Component {
                 className='cover'
               />
               <div className="contain">
-              <ReactPlayer
+              <ReactPlayer 
+
+
         url="https://www.youtube.com/watch?v=X6xNr1HSA-A&t=12s"
       />
               </div>

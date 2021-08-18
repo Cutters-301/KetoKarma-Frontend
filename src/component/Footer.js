@@ -29,13 +29,9 @@ export class Footer extends Component {
                             <div class="col-xs-6 col-md-3">
                                 <h6>Quick Links</h6>
                                 <ul class="footer-links">
-
-                                
-
                                     <li class="ref"> <a href="/aboutUs" >About Us</a></li>
                                     <li class="ref"> <a href="/recipe" >Recipes</a></li>
                                     <li class="ref"><a href="/" >Home</a></li>
-                                    {/* <li class="ref"><Link to="/faqs" ><a href={() => false}>FAQs</a></Link></li> */}
                                     <li class="ref"><a href="/#">LogOut</a></li>
                                 </ul>
                             </div>

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { Card, Row, Col, Image, Button } from 'react-bootstrap';
-import Header from '../component/Header';
-import Footer from '../component/Footer';
 import FormModal from "../component/FormModal";
 import '../styling/nutrition.css'
 import Logo1 from '../assets/stethoscope.png'
@@ -17,6 +15,7 @@ export class Nutrition extends Component {
             name: '',
             dateTime: '',
             telephone: '',
+            nutritionist: '',
             displayAddModal: false,
 
         };
@@ -37,6 +36,7 @@ export class Nutrition extends Component {
         const name = e.target.userName.value;
         const dateTime = e.target.appointDateTime.value;
         const telephone = e.target.userTelephone.value;
+        const nutritionist = e.target.nutritionist.valve;
 
 
 
@@ -44,6 +44,7 @@ export class Nutrition extends Component {
             name: name,
             dateTime: dateTime,
             telephone: telephone,
+            nutritionist: nutritionist,
         });
 
         Swal.fire({
@@ -228,7 +229,7 @@ export class Nutrition extends Component {
                             <Col className="col2">
                                 <Card.Body>
                                     <Card.Text>
-                                        <h4 style={{ marginRight: '29%' }} className="nameD">Doctor ragad aloqaile</h4>
+                                        <h4 style={{ marginRight: '25%' }} className="nameD">Doctor Ragad Aloqaile</h4>
                                         <p style={{ marginRight: '70%' }} className="titleD">Nutritionist</p>
                                         <Row>
                                             <Col className="colD">
