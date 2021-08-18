@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Team1 from '../assets/MyProfile-Image.jpeg';
+import Header from '../component/Header';
 import Footer from '../component/Footer';
 import '../styling/aboutUs.css'
 
@@ -7,6 +8,7 @@ export class AboutUs extends Component {
     render() {
         return (
             <div className="body" >
+                <Header />
                 <div className="aboutUs">
                     <div className="mission">
                         <h1 className="title"><span>Our Mission</span></h1>

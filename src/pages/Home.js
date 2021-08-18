@@ -122,7 +122,7 @@ export class Home extends Component {
                   border: '1px solid rgb(39, 134, 44, 0.8)',
                 }}
               >
-                <Card.Img
+                <Card.Img    style={{ height: '190px' }}
                   variant='top'
                   src='https://www.tricitymed.org/wp-content/uploads/2018/01/shutterstock_627075779-300x200.jpg'
                 />

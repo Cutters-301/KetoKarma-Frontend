@@ -8,6 +8,7 @@ import { withAuth0 } from '@auth0/auth0-react';
 import Home from './pages/Home';
 import About from './pages/Aboutus';
 import Nutrition from './pages/Nutrition';
+import Calculator from './pages/calculator';
 
 import {
   BrowserRouter as Router,
@@ -32,7 +33,7 @@ class App extends React.Component {
               {this.props.auth0.isAuthenticated && <LoginButton/>}
               </Route>
               <Route exact path="/profile">
-                <Profile/>
+              {this.props.auth0.isAuthenticated && <Profile/>}
               </Route>
               <Route exact path="/about-us">
                 <About/>
@@ -41,9 +42,7 @@ class App extends React.Component {
               <Route exact path="/nutrition">
                 <Nutrition/>
               </Route>
-              {/* <Route exact path="/calculator">
-                <Calculator/>
-              </Route> */}
+              <Route exact path="/calculator" component={Calculator} />
             </Switch>
         </Router>
       </>
