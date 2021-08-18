@@ -148,7 +148,7 @@ class Profile extends React.Component {
               updateplanObj={this.state.updateplanObj}
             />
           )}
-          <div style={{marginTop:"50%",position:"absolute",zIndex:"5"}}>
+          <div style={{marginTop:"-1%",position:"absolute",zIndex:"5"}}>
           <h2 style={{ marginLeft:"25%" , fontSize:"50px" , fontFamily:"'Indie Flower', cursive"}}>Plan Your Day and track your Mood!</h2> 
                <br />
                <br />

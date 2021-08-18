@@ -37,7 +37,7 @@ html {
   }
   
   h1,
-  h2 {
+  h5 {
     font-weight: 500;
     margin: 0px 0px 5px 0px;
   }
@@ -46,8 +46,8 @@ html {
     font-size: 24px;
   }
   
-  h2 {
-    font-size: 15px;
+  h5 {
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
   }
   

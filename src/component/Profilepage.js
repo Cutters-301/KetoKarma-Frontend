@@ -24,9 +24,9 @@ export class Profilepage extends Component {
                       {user.name}
                     </h1>
           
-              <h2>
+              <h5>
                         <HiOutlineMail size='1.5em' /> {user.email}
-                    </h2>
+                    </h5>
           
             </header>
           
