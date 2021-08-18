@@ -6,10 +6,11 @@ import Profile from './pages/Profile';
 import LoginButton from './component/LoginButton';
 import { withAuth0 } from '@auth0/auth0-react';
 import Home from './pages/Home';
-import About from './pages/Aboutus';
 import Nutrition from './pages/Nutrition';
 import Calculator from './pages/calculator';
-
+import Header from "./component/Header";
+import AboutUs from "./pages/Aboutus"
+import Footer from "./component/Footer"
 import {
   BrowserRouter as Router,
   Switch,
@@ -25,8 +26,10 @@ class App extends React.Component {
   render() {
     return (
       <>
-       
+       <Header/>
+
          <Router>
+           
             <Switch>
               <Route exact path="/">
               <Home />
@@ -35,16 +38,16 @@ class App extends React.Component {
               <Route exact path="/profile">
               {this.props.auth0.isAuthenticated && <Profile/>}
               </Route>
-              <Route exact path="/about-us">
-                <About/>
-              </Route>
               <Route exact path="/recipe" component={Recipes} />
               <Route exact path="/nutrition">
                 <Nutrition/>
               </Route>
               <Route exact path="/calculator" component={Calculator} />
+              <Route exact path="/aboutUs" component={AboutUs} />
+              
             </Switch>
         </Router>
+        <Footer/>
       </>
       
     );
