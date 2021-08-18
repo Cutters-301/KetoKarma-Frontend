@@ -1,7 +1,6 @@
 import React from 'react';
 import { withAuth0 } from '@auth0/auth0-react';
 import Table from 'react-bootstrap/Table';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import Button from 'react-bootstrap/Button';
 import  { UpdatePlanForm } from '../component/UpdatePlanForm';
@@ -133,20 +132,7 @@ class Profile extends React.Component {
       <div>
         <>
         {this.props.auth0.isAuthenticated && <Profilepage />}
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        
-        <h2 style={{ marginLeft:"35%"}}>Plan Your Day and track your Mood!</h2>      
-        <Button style={{marginLeft:"47%"}} variant="secondary" onClick={() => this.handelDisplayModal()}><RiHeartAddLine /> </Button>
-         <br />
-         <br />
-         <br />
+       
         <PlanFormModal 
                  show={this.state.displayAddModal}
                  handelDisplayModal={this.handelDisplayModal}
@@ -162,9 +148,16 @@ class Profile extends React.Component {
               updateplanObj={this.state.updateplanObj}
             />
           )}
-          <Table striped bordered hover>
-            <thead>
-              <tr  class="table-success">
+          <div style={{marginTop:"50%",position:"absolute",zIndex:"5"}}>
+          <h2 style={{ marginLeft:"25%" , fontSize:"50px" , fontFamily:"'Indie Flower', cursive"}}>Plan Your Day and track your Mood!</h2> 
+               <br />
+               <br />
+               <br />
+        <Button style={{marginLeft:"47%"}} variant="secondary" onClick={() => this.handelDisplayModal()}><RiHeartAddLine /> </Button>
+          <Table style={{marginLeft:"20%",width:"50%" , "border-collapse": "collapse",
+  "border-radius": "2em","overflow": "hidden"}} striped bordered hover>
+            <thead style={{borderColor:"black"}}>
+              <tr  style={{backgroundColor:"rgba(255, 235, 59, 0.3) "}}>
                 <th>#</th>
                 <th>Breakfast</th>
                 <th>Lunch</th>
@@ -177,21 +170,15 @@ class Profile extends React.Component {
             </thead>
             {this.state.plans.length > 0 &&
               this.state.plans.map((plan, id) => (
-                <tbody>
-                  <tr>
-                    <td>Day{id}</td>
-                    <td  class="table-success">{plan.Breakfast}</td>
-                    <td>{plan.Lunch}</td>
-                    <td   class="table-success">{plan.Dinner}</td>
+                <tbody style={{borderColor:"black" , fontSize:"14px"}}>
+                  <tr  style={{backgroundColor:"rgba(146, 240, 151, 0.6)"}}>
+                    <td >Day{id}</td>
+                    <td >{plan.Breakfast}</td>
+                    <td   >{plan.Lunch}</td>
+                    <td   >{plan.Dinner}</td>
                     <td>{plan.Fruits}</td>
-                    <td  class="table-success">{plan.Vegetables}</td>
+                    <td  >{plan.Vegetables}</td>
                     <td>
-                      {/* <a class = "btn border-shadow update">
-            <span class="text-gradinet"><i class="fas fa-pencil-alt"></i></span>
-            </a>
-            <a class = "btn border-shadow delete">
-            <span class="text-gradinet"><i class="fas fa-times"></i></span>
-            </a> */}
                       <Button
                         variant='outline-danger'
                         onClick={() => this.handelUpdatedModal(plan)}
@@ -211,7 +198,10 @@ class Profile extends React.Component {
                 </tbody>
               ))}
           </Table>
+          </div>
         </>
+     
+        
       </div>
     );
   }

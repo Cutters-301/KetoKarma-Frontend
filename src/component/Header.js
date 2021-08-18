@@ -5,19 +5,11 @@ import { TiCalculator } from 'react-icons/ti';
 import { VscPerson } from 'react-icons/vsc';
 import { BsBoxArrowInDown } from 'react-icons/bs';
 import {CgProfile} from 'react-icons/cg';
-import { Link } from "react-router-dom";
 import LogoutButton from './LogoutButton';
 import { withAuth0 } from '@auth0/auth0-react';
-import Logo from '../assets/log.png';
 import LoginButton from './LoginButton';
 import {
     BrowserRouter as Router,
-    Switch,
-    Route,
-    useHistory,
-    withRouter,
-    NavLink,
-  
   } from "react-router-dom";
 
 class Header extends Component {
@@ -34,16 +26,16 @@ class Header extends Component {
             <br />
             HOME
             </a>
-          <Link exact to='/recipe'>
+          <a href='/recipe'>
             <GiKnifeFork size='1.2em' />
             <br />
             KETO RECIPES
-          </Link>
-          <Link exact to='/calculator'>
+          </a>
+          <a href='/calculator'>
             <TiCalculator size='1.2em' />
             <br />
             CALCULATOR
-          </Link>
+          </a>
           <a href='/nutrition'>
             <VscPerson size='1.2em' />
             <br />
@@ -51,10 +43,10 @@ class Header extends Component {
           </a>
           <Router>
           {isAuthenticated ? <>
-        <Link to="/profile">
+        <a href="/profile">
         <CgProfile size='1.2em' />
         <br />    
-        Profile</Link>
+        Profile</a>
         <LogoutButton style={{marginLeft:"90%"}}/> </> : <LoginButton/> }
         </Router>
         </div>
