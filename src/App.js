@@ -9,15 +9,12 @@ import Home from './pages/Home';
 import About from './pages/Aboutus';
 import Nutrition from './pages/Nutrition';
 import Calculator from './pages/calculator';
+
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  // useHistory,
-  // useLocation
-  // withRouter,
-  // Link,
-  // NavLink,
+
 
 } from "react-router-dom";
 
@@ -46,7 +43,6 @@ class App extends React.Component {
                 <Nutrition/>
               </Route>
               <Route exact path="/calculator" component={Calculator} />
-              
             </Switch>
         </Router>
       </>
