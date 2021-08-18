@@ -215,7 +215,6 @@
     border-top: 10px solid red;
     border-radius: 10px;
     width: 50px;
-    content: 'calories'
 
   }
   .hr3 {
@@ -260,3 +259,44 @@ hr1:after {
 .gender{
     margin-right: 25%
 }
+
+.pa1, .hr1{
+ float: left; 
+ margin: 15px;
+}
+
+.pa2, .hr2{
+    float: left; 
+    margin: 15px;
+    
+   }
+
+   .pa3, .hr3{
+    float: left; 
+    margin: 25px;
+    margin-left: -151px;
+   }
+
+   .pa4, .hr4{
+    float: left; 
+    margin: 35px;
+    margin-left: -237px;
+   }
+
+   .pa3 {
+    margin-left: 5px;
+   }
+
+  .pa4{
+    margin-left: 0px;
+
+  }
+  .para {
+    margin-top: 40px;
+    float: left;
+    margin-left: -474px
+  }
+  .result{
+      padding-left: 25px;
+      padding-bottom: 40px;
+  }

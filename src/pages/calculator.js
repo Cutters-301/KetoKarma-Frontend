@@ -33,7 +33,7 @@ export class Calculator extends Component {
             toggle: true,
         })
     }
-    
+
 
     calculateCalories = (e) => {
         e.preventDefault();
@@ -85,7 +85,7 @@ export class Calculator extends Component {
                     cal = 1.725 * bmr
                     break;
                 default:
-        
+
 
             }
             grams = cal * 0.129598
@@ -115,31 +115,31 @@ export class Calculator extends Component {
 
                 <Form style={{ border: '5px solid rgb(92, 83, 83)', 'margin-top': '20px', 'margin-bottom': '20px', padding: '15px' }} noValidate onSubmit={this.calculateCalories}>
                     <Row className="mb-3">
-                        <div class = 'container'>
-                        <center>
-                        <span>
-                            <h2 class = 'gender'>
-                                Gender
-                            </h2>
-                            <h2 class="left">
-                                    Male
+                        <div class='container'>
+                            <center>
+                                <span>
+                                    <h2 class='gender'>
+                                        Gender
                                     </h2>
-                            </span>
-                            <input onClick={this.toggleSwitch} type="checkbox" id="toggle" class="toggle--checkbox"/>
-                    
-                         
-                            <label for="toggle" class="toggle--label">
-                                <span class="toggle--label-background"></span>
-                            </label>
-                         
-                           
-                            <div class="background"></div>
-                            <span>
-                                <h2 class='right'>
-                                    Female
-                                </h2>
+                                    <h2 class="left">
+                                        Male
+                                    </h2>
                                 </span>
-                        </center>
+                                <input onClick={this.toggleSwitch} type="checkbox" id="toggle" class="toggle--checkbox" />
+
+
+                                <label for="toggle" class="toggle--label">
+                                    <span class="toggle--label-background"></span>
+                                </label>
+
+
+                                <div class="background"></div>
+                                <span>
+                                    <h2 class='right'>
+                                        Female
+                                    </h2>
+                                </span>
+                            </center>
                         </div>
                     </Row>
                     <Row className="mb-3">
@@ -193,37 +193,43 @@ export class Calculator extends Component {
                         <Button style={{ 'background-color': 'rgb(39, 134, 44, 0.7) ', border: 'none' }} type="submit">Calculate</Button> </center>
                 </Form>
 
-                <div class='result' style ={this.state.show ? {diplay:'block'}:{display:"none"}}
->
+                <div class='result' style={this.state.show ? { diplay: 'block' } : { display: "none" }}
+                >
                     <div class='line1'>
+                    <hr class='hr1'></hr>
 
-                        <hr class='hr1'></hr>
-                        <p style={{ display: 'inline-block', 'margin-top': '10px' }}>
+                        <p class='pa1'>
                             Calories: {parseInt(this.state.calories)}
-
                         </p>
+                         <br />
                     </div>
                     <div class='line2'>
-                        <hr class='hr2'></hr>
-                        <p>
+                    <hr class='hr2'></hr>
+                        <p class='pa2'>
                             Carbs: {parseInt(this.state.carbs)}
                         </p>
+                        <br /> <br />
                     </div>
                     <div class='line3'>
-                        <hr class='hr3'></hr>
-                        <p>
+                    <hr class='hr3'></hr>
+                        <p class='pa3'>
                             Protin: {parseInt(this.state.protin)}
                         </p>
+                        
+                        <br /><br />
                     </div>
                     <div class='line4'>
-                        <hr class='hr4'></hr>
-                        <p>
+                    <hr class='hr4'></hr>
+                        <p class='pa4'>
                             Fats: {parseInt(this.state.fat)}
                         </p>
+                        
+                        <br /><br />
                     </div>
-<p>
-Based on your inputs, we suggest you eat: {parseInt(this.state.calories)} calories. From those, {parseInt(this.state.fat)}g fats, {parseInt(this.state.carbs)}g net carbs, and {parseInt(this.state.protin)}g protein.
-</p>
+                    <p class='para'>
+                        Based on your inputs, we suggest you eat: {parseInt(this.state.calories)} calories. From those, {parseInt(this.state.fat)}g fats, {parseInt(this.state.carbs)}g net carbs, and {parseInt(this.state.protin)}g protein.
+                    </p>
+                    <br /><br />
                 </div>
 
 
