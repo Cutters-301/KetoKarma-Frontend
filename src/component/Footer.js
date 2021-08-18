@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
-// import { Logo } from "../assets/keto-logo.jpg"
 import '../styling/Footer.css'
 
 

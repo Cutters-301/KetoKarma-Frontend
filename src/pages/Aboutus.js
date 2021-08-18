@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import Team1 from '../assets/MyProfile-Image.jpeg';
-import Header from '../component/Header';
-import Footer from '../component/Footer';
 import '../styling/aboutUs.css'
 
 export class AboutUs extends Component {
@@ -15,7 +13,10 @@ export class AboutUs extends Component {
                     </div>
                     <div className="vision">
                         <h1 className="title"><span>Our Vision</span></h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere saepe fugiat esse aperiam dicta cum soluta. Magnam provident ipsum esse blanditiis, rerum perferendis incidunt dignissimos maiores temporibus aliquam tempora dicta.</p>
+                        <p>We believe keto is simple.
+Once you have the right information with easy-to-follow recipes, using ingredients found in UK stores, keto doesn’t require hours in the kitchen. It’s just delicious food providing your body with the nutrition it needs.
+
+We are committed to building a community rooted in positivity and support, celebrating the highs and embracing the lows.</p>
                     </div>
                     <div className="team">
                         <h1 className="title"> <span>Meet Our Team</span></h1>

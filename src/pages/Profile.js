@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { withAuth0 } from '@auth0/auth0-react';
 import Table from 'react-bootstrap/Table';
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,6 +9,7 @@ import { GrEdit } from 'react-icons/gr';
 import { TiDelete } from 'react-icons/ti';
 import { RiHeartAddLine } from 'react-icons/ri';
 import PlanFormModal from '../component/PlanFormModal';
+import Profilepage from '../component/Profilepage';
 
 class Profile extends React.Component {
   constructor(props) {
@@ -131,9 +132,21 @@ class Profile extends React.Component {
     return (
       <div>
         <>
-        <h1>Create Your Own Keto Diet Plan!</h1>
-        <Button variant="secondary" onClick={() => this.handelDisplayModal()}><RiHeartAddLine /> </Button>
-
+        {this.props.auth0.isAuthenticated && <Profilepage />}
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        
+        <h2 style={{ marginLeft:"35%"}}>Plan Your Day and track your Mood!</h2>      
+        <Button style={{marginLeft:"47%"}} variant="secondary" onClick={() => this.handelDisplayModal()}><RiHeartAddLine /> </Button>
+         <br />
+         <br />
+         <br />
         <PlanFormModal 
                  show={this.state.displayAddModal}
                  handelDisplayModal={this.handelDisplayModal}
@@ -149,9 +162,9 @@ class Profile extends React.Component {
               updateplanObj={this.state.updateplanObj}
             />
           )}
-          <Table striped bordered hover variant='dark'>
+          <Table striped bordered hover>
             <thead>
-              <tr>
+              <tr  class="table-success">
                 <th>#</th>
                 <th>Breakfast</th>
                 <th>Lunch</th>
@@ -167,11 +180,11 @@ class Profile extends React.Component {
                 <tbody>
                   <tr>
                     <td>Day{id}</td>
-                    <td>{plan.Breakfast}</td>
+                    <td  class="table-success">{plan.Breakfast}</td>
                     <td>{plan.Lunch}</td>
-                    <td>{plan.Dinner}</td>
+                    <td   class="table-success">{plan.Dinner}</td>
                     <td>{plan.Fruits}</td>
-                    <td>{plan.Vegetables}</td>
+                    <td  class="table-success">{plan.Vegetables}</td>
                     <td>
                       {/* <a class = "btn border-shadow update">
             <span class="text-gradinet"><i class="fas fa-pencil-alt"></i></span>

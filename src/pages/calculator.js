@@ -2,8 +2,6 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styling/calculator.css';
-import Header from '../component/Header';
-import Footer from '../component/Footer';
 import Form from 'react-bootstrap/Form';
 import { Row, Col, Button } from 'react-bootstrap';
 import Radio from '@material-ui/core/Radio';
