@@ -5,7 +5,7 @@ import '../styling/aboutUs.css'
 export class AboutUs extends Component {
     render() {
         return (
-            <div className="body" >
+            <div >
                 <div className="aboutUs">
                     <div className="mission">
                         <h1 className="title"><span>Our Mission</span></h1>

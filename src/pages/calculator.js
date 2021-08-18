@@ -41,7 +41,6 @@ export class Calculator extends Component {
         const weight = e.target.weight.value;
         const height = e.target.height.value;
         const age = e.target.age.value;
-        // const gender = e.target.gender.value;
         const activeState = e.target.activeState.value;
 
 
@@ -132,7 +131,6 @@ export class Calculator extends Component {
                             <div class='containerG'>
 
                                 <h2 class="left">
-
                                     Male
                                 </h2>
                                 <input onClick={this.toggleSwitch} type="checkbox" id="toggle" class="toggle--checkbox" />
@@ -256,9 +254,7 @@ export class Calculator extends Component {
                     </p>
                     <br /><br />
                 </div>
-
                 </center>
-
 
 
 

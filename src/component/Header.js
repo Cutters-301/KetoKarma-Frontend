@@ -11,16 +11,20 @@ import LoginButton from './LoginButton';
 import {
     BrowserRouter as Router,
   } from "react-router-dom";
+  import Logo from '../assets/log.png';
 
 class Header extends Component {
   render() {
     const { isAuthenticated }=this.props.auth0;
     return (
       <header >
-          {/* <div className="img">
-          <img src={Logo} alt="logo" style={{width:"20%" , marginTop:"-90px"}} />
-          </div> */}
+         
         <div id='navbar'>
+        <div className="img" style = {{float: 'left' , marginRight: '-14%'}} >
+          <img src={Logo} alt="logo" style = {{width: '200px', height:'200px', 'margin-left':'-303%', 'margin-top': '-16%'}} />
+          </div>
+          <div>
+        
             <a href='/'>
             <BsBoxArrowInDown size='1.2em' />
             <br />
@@ -49,6 +53,7 @@ class Header extends Component {
         Profile</a>
         <LogoutButton style={{marginLeft:"90%"}}/> </> : <LoginButton/> }
         </Router>
+        </div>
         </div>
         <div className='overlay'>
           <h1 className="website">Keto Karma</h1>
