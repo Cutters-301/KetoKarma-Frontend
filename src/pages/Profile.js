@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { withAuth0 } from '@auth0/auth0-react';
 import Table from 'react-bootstrap/Table';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import Button from 'react-bootstrap/Button';
 import  { UpdatePlanForm } from '../component/UpdatePlanForm';
@@ -9,6 +8,7 @@ import { GrEdit } from 'react-icons/gr';
 import { TiDelete } from 'react-icons/ti';
 import { RiHeartAddLine } from 'react-icons/ri';
 import PlanFormModal from '../component/PlanFormModal';
+import Profilepage from '../component/Profilepage';
 
 class Profile extends React.Component {
   constructor(props) {
@@ -131,9 +131,8 @@ class Profile extends React.Component {
     return (
       <div>
         <>
-        <h1>Create Your Own Keto Diet Plan!</h1>
-        <Button variant="secondary" onClick={() => this.handelDisplayModal()}><RiHeartAddLine /> </Button>
-
+        {this.props.auth0.isAuthenticated && <Profilepage />}
+       
         <PlanFormModal 
                  show={this.state.displayAddModal}
                  handelDisplayModal={this.handelDisplayModal}
@@ -149,9 +148,16 @@ class Profile extends React.Component {
               updateplanObj={this.state.updateplanObj}
             />
           )}
-          <Table striped bordered hover variant='dark'>
-            <thead>
-              <tr>
+          <div style={{marginTop:"-1%",position:"absolute",zIndex:"5"}}>
+          <h2 style={{ marginLeft:"25%" , fontSize:"50px" , fontFamily:"'Indie Flower', cursive"}}>Plan Your Day and track your Mood!</h2> 
+               <br />
+               <br />
+               <br />
+        <Button style={{marginLeft:"47%"}} variant="secondary" onClick={() => this.handelDisplayModal()}><RiHeartAddLine /> </Button>
+          <Table style={{marginLeft:"20%",width:"50%" , "border-collapse": "collapse",
+  "border-radius": "2em","overflow": "hidden"}} striped bordered hover>
+            <thead style={{borderColor:"black"}}>
+              <tr  style={{backgroundColor:"rgba(255, 235, 59, 0.3) "}}>
                 <th>#</th>
                 <th>Breakfast</th>
                 <th>Lunch</th>
@@ -164,21 +170,15 @@ class Profile extends React.Component {
             </thead>
             {this.state.plans.length > 0 &&
               this.state.plans.map((plan, id) => (
-                <tbody>
-                  <tr>
-                    <td>Day{id}</td>
-                    <td>{plan.Breakfast}</td>
-                    <td>{plan.Lunch}</td>
-                    <td>{plan.Dinner}</td>
+                <tbody style={{borderColor:"black" , fontSize:"14px"}}>
+                  <tr  style={{backgroundColor:"rgba(146, 240, 151, 0.6)"}}>
+                    <td >Day{id}</td>
+                    <td >{plan.Breakfast}</td>
+                    <td   >{plan.Lunch}</td>
+                    <td   >{plan.Dinner}</td>
                     <td>{plan.Fruits}</td>
-                    <td>{plan.Vegetables}</td>
+                    <td  >{plan.Vegetables}</td>
                     <td>
-                      {/* <a class = "btn border-shadow update">
-            <span class="text-gradinet"><i class="fas fa-pencil-alt"></i></span>
-            </a>
-            <a class = "btn border-shadow delete">
-            <span class="text-gradinet"><i class="fas fa-times"></i></span>
-            </a> */}
                       <Button
                         variant='outline-danger'
                         onClick={() => this.handelUpdatedModal(plan)}
@@ -198,7 +198,10 @@ class Profile extends React.Component {
                 </tbody>
               ))}
           </Table>
+          </div>
         </>
+     
+        
       </div>
     );
   }

@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
-// import { Logo } from "../assets/keto-logo.jpg"
 import '../styling/Footer.css'
 
 
@@ -13,7 +11,7 @@ export class Footer extends Component {
                         <div class="row">
                             <div class="col-sm-12 col-md-6">
                                 <h6>KetoKarma</h6>
-                                <p class="text-justify"> <i> KetoKarma </i> Is a Diet Platform That Help You To Be Healthy In Your Life Style.</p>
+                                <p class="text-justify"> <span> KetoKarma </span> Is a Diet Platform That Help You To Be Healthy In Your Life Style.</p>
                                 <input class="bar" type="text" value="" placeholder="Search ..." />
                                 <input class="search" type="button" value="Search" /> <br />
                                 {/* <img src={ Logo } alt="Keto" /> */}
@@ -22,9 +20,9 @@ export class Footer extends Component {
                             <div class="col-xs-6 col-md-3">
                                 <h6>Contact</h6>
                                 <ul class="footer-links">
-                                    Address:<li> Jordan, Amman <br /> P.O:12345 </li>
-                                    Email:<li>info@example.com</li>
-                                    Phone:<li>+962-6594846</li>
+                                    Address:<li class="ref"> Jordan, Amman <br /> P.O:12345 </li>
+                                    Email:<li class="ref">info@example.com</li>
+                                    Phone:<li class="ref">+962-6594846</li>
 
                                 </ul>
                             </div>
@@ -34,12 +32,11 @@ export class Footer extends Component {
 
                                 
 
-                                    <li> <Link exact to="/aboutus" >About Us</Link></li>
-                                    <li> <Link  exact to="/recipe" >Recipes</Link></li>
-                                    <li><Link exact  to="/" >Home</Link></li>
-
-                                    <li><Link to="/faqs" ><a href={() => false}>FAQs</a></Link></li>
-                                    <li ><a href="/#">LogOut</a></li>
+                                    <li class="ref"> <a href="/aboutUs" >About Us</a></li>
+                                    <li class="ref"> <a href="/recipe" >Recipes</a></li>
+                                    <li class="ref"><a href="/" >Home</a></li>
+                                    {/* <li class="ref"><Link to="/faqs" ><a href={() => false}>FAQs</a></Link></li> */}
+                                    <li class="ref"><a href="/#">LogOut</a></li>
                                 </ul>
                             </div>
                         </div>

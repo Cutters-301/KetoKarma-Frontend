@@ -2,8 +2,6 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styling/calculator.css';
-import Header from '../component/Header';
-import Footer from '../component/Footer';
 import Form from 'react-bootstrap/Form';
 import { Row, Col, Button } from 'react-bootstrap';
 import Radio from '@material-ui/core/Radio';
@@ -134,6 +132,7 @@ export class Calculator extends Component {
                             <div class='containerG'>
 
                                 <h2 class="left">
+
                                     Male
                                 </h2>
                                 <input onClick={this.toggleSwitch} type="checkbox" id="toggle" class="toggle--checkbox" />
@@ -257,7 +256,9 @@ export class Calculator extends Component {
                     </p>
                     <br /><br />
                 </div>
+
                 </center>
+
 
 
 

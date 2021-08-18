@@ -2,12 +2,9 @@ import React, { Component } from 'react'
 import '../styling/recipe.css';
 import axios from 'axios';
 import ShowRecipe from '../component/ShowRecipe';
-import Header from '../component/Header';
-import Footer from '../component/Footer';
-import { AiOutlineSearch } from "react-icons/bs";
 
 
-// I Can access the data in onther component using (props.location.state)
+
 export class Recipes extends Component {
     constructor(props) {
         super(props);
@@ -25,7 +22,7 @@ export class Recipes extends Component {
         console.log(recipe);
         console.log(mealType);
         const response =
-            await axios.get(`https://api.edamam.com/search?q=${recipe}&app_id=ee24950e&app_key=73c472644b670086c57734e05cd20b05&from=0&to=7&calories=591-722&mealType=${mealType}`);
+            await axios.get(`https://api.edamam.com/search?q=${recipe}&app_id=ee24950e&app_key=73c472644b670086c57734e05cd20b05&from=0&to=6&calories=591-722&mealType=${mealType}&health=keto-friendly`);
         console.log(response.data.hits)
         this.setState({
             recipeData: response.data,
@@ -33,46 +30,23 @@ export class Recipes extends Component {
         });
     }
 
-
-    getDefaultRecipe = async () => {
-        const response = await axios.get(`https://api.edamam.com/search?q=meat&app_id=ee24950e&app_key=73c472644b670086c57734e05cd20b05&from=0&to=3&calories=591-722&hhealthLabels`);
-        this.setState({
-            defaultData: response.data
-
-        });
-
-    }
-    componentDidMount() {
-        this.getDefaultRecipe();
-    }
-
     render() {
 
-        // getDefaultRecipe()
+      
         return (
             <>
-                <Header />
+          
                 <div class='recipe'>
                     {console.log('recipe', this.state.recipeData)}
-                    <h1 > Recipe</h1>
-                    {/* <head>
-                    <meta charset="UTF-8" />
-                    <link rel="stylesheet" href="style.css" />
-                    <link rel="stylesheet" href="fontawesome-free-5.15.1/css/all.css" />
-                    <title>Search</title>
-                    <script src="https://kit.fontawesome.com/afd6aa68df.js" crossorigin="anonymous"></script>
-                </head> */}
+                    <p class="title-recipe"> Recipes</p>
+                        <img src="https://image.flaticon.com/icons/png/512/1830/1830878.png"
+                      alt="" style={{width:'200px',height:"150px","margin-top":"20px"}}  />            
                     <body>
                         <div class="box">
                             <form name="search" onSubmit={this.submitForm}>
                                 <input type="text" class="input" name="recipeName"
                                 />
-                                {/* <select class='meal' name='mealTypeForm'>
-                                <option value='Breakfast'>Breakfast</option>
-                                <option value='Lunch'>Lunch</option>
-                                <option value='Dinner'>Dinner</option>
-                                <option value='Snack'>Snack</option>
-                            </select> */}
+                         
                                 <label class="custom-select" for="styledSelect1"><select id="styledSelect1" name="mealTypeForm">
                                     
                                     <option value="Breakfast">
@@ -88,38 +62,28 @@ export class Recipes extends Component {
                                          Snack
                                     </option>
                                 </select></label>
-                                {/* <AiOutlineSearch /> */}
+                            
                                 <input class='submit' type="submit" />
 
                             </form>
-                            {/* <i class="fas fa-search"></i> */}
+                         
                         </div>
 
                         <div>
-                            {/* {console.log('jjjjjjjjjjjjjjjjjj',this.state.defaultData)} */}
+                        
                             {this.state.recipeData &&
                                 <ShowRecipe
 
                                     allRecipes={this.state.recipeData}
-                                // defaultData={this.state.defaultData}
-
                                 />
                             }
                         </div>
                     </body>
-                    {/* <form className="form" onSubmit={this.submitForm}>
-                <input class='input' type='text' placeholder='enter ingridient' name='recipeName' />
-                <select class='meal' name='mealTypeForm'> 
-                <option value='Breakfast'>Breakfast</option>
-                <option value='Lunch'>Lunch</option>
-                <option value='Dinner'>Dinner</option>
-                <option value='Snack'>Snack</option>
-                </select>
-            </form> */}
+               
 
                     <br />
                 </div>
-                <Footer />
+             
             </>
         )
     }
