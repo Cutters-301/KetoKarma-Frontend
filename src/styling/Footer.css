@@ -7,80 +7,9 @@
   color: whitesmoke;
   position: relative;
   bottom: 0;
-} 
-  .site-footer hr {
-    border-top-color: #bbb;
-    opacity: 0.5
-  }
-  
-  .site-footer hr.small {
-    margin: 20px 0
-  }
-  
-  .site-footer h6 {
-    color: #fff;
-    font-size: 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 5px;
-    letter-spacing: 2px
-  }
-  
-  .site-footer span{
-    color: rgb(58, 54, 54);
-    font-weight: bold;
-    font-size:15px
-  }
-  .site-footer a:hover {
-    color:white;
-    text-decoration: none;
-  }
-  
-  .footer-links {
-    padding-left: 0;
-    list-style: none
-  }
-  
-  .footer-links .ref {
-    display: block
-  }
-  
-  .footer-links a {
-    color: white;
-    text-decoration: none
-  }
-  
-  .footer-links a:active,
-  .footer-links a:focus,
-  .footer-links a:hover {
-    color: rgb(58, 54, 54);
-    text-decoration: none;
-  }
-  
-  .footer-links.inline li {
-    display: inline-block
-  }
-  
-  .bar, .search {
-     border: none;
-     border-radius: 4px;
-     font-size:15px;
-     padding:8px;
-     margin-top:15px;
-     margin-left: 20px; 
-     padding-left: 15px;
-     padding-right: 15px;  
-  }
-  .bar {
-     width:50%;
-  }
-  .search {
-      background-color: rgb(92, 83, 83);
-      color: white;
-  }
-  .search:hover {
-    background-color: rgb(112, 223, 112);
-    color: rgb(92, 83, 83)}
+   width: 100%;
+       
+}
 
 .site-footer hr {
   border-top-color: #bbb;
@@ -104,7 +33,6 @@
   color: rgb(58, 54, 54);
   font-weight: bold;
   font-size: 15px;
-
 }
 .site-footer a:hover {
   color: white;
@@ -185,7 +113,4 @@
   text-decoration: none;
   color: rgb(58, 54, 54);
   font-weight: bold;
-
-  
-  }
-  
+}

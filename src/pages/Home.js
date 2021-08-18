@@ -9,7 +9,6 @@ export class Home extends Component {
   render() {
     return (
       <div>
-        <Header />
         <br />
         <br />
         <br />
@@ -455,7 +454,6 @@ export class Home extends Component {
             </Carousel.Item>
           </Carousel>
         </div>
-        <Footer />
       </div>
     );
   }

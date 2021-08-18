@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import '../styling/recipe.css';
 import axios from 'axios';
 import ShowRecipe from '../component/ShowRecipe';
-import Header from '../component/Header';
-import Footer from '../component/Footer';
 
 
 
@@ -37,13 +35,12 @@ export class Recipes extends Component {
       
         return (
             <>
-                <Header />
+          
                 <div class='recipe'>
                     {console.log('recipe', this.state.recipeData)}
                     <p class="title-recipe"> Recipes</p>
-                    {/* <img src="https://image.flaticon.com/icons/png/512/2413/2413307.png alt="" style={{width:'50px',height:"50ox",}}  />     */}
                         <img src="https://image.flaticon.com/icons/png/512/1830/1830878.png"
-                      alt="" style={{width:'150px',height:"150px","margin-top":"20px"}}  />            
+                      alt="" style={{width:'200px',height:"150px","margin-top":"20px"}}  />            
                     <body>
                         <div class="box">
                             <form name="search" onSubmit={this.submitForm}>
@@ -65,11 +62,11 @@ export class Recipes extends Component {
                                          Snack
                                     </option>
                                 </select></label>
-                                {/* <AiOutlineSearch /> */}
+                            
                                 <input class='submit' type="submit" />
 
                             </form>
-                            {/* <i class="fas fa-search"></i> */}
+                         
                         </div>
 
                         <div>
@@ -86,7 +83,7 @@ export class Recipes extends Component {
 
                     <br />
                 </div>
-                <Footer />
+             
             </>
         )
     }
