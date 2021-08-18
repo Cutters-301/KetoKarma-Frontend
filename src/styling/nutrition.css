@@ -1,0 +1,79 @@
+.container {
+  margin-top: 60px;
+}
+.cardD {
+  background-color: rgba(130, 223, 134);
+  cursor: pointer;
+}
+.cardD:hover {
+  background-color: rgb(249, 253, 250);
+}
+.imgD {
+  width: 50%;
+  margin-left: -40px;
+  margin-top: 80px;
+}
+
+.nameD {
+  margin-right: 15%;
+  margin-top: 50px;
+  color: rgb(82, 72, 72);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.titleD {
+  margin-right: 80%;
+  margin-top: 10px;
+  font-size: 18px;
+  color: rgb(138, 135, 135);
+  font-family: "Style Script", cursive;
+}
+
+.logoD {
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+}
+.colD {
+  margin-right: 80%;
+}
+.imgT {
+  margin-top: 20px;
+}
+.details {
+  margin-left: 18%;
+  color: rgb(138, 135, 135);
+  font-size: 17px;
+  font-family: "Style Script", cursive;
+}
+
+.d1 {
+  margin-top: -40px;
+}
+.d2 {
+  margin-top: -30px;
+  margin-right: 35%;
+}
+.d3 {
+  margin-top: -30px;
+  margin-right: 55%;
+}
+
+.modalBtn {
+    width: 25%;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 38%;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    background-color: rgb(102, 231, 113);
+    color: rgb(249, 253, 250);
+    border: none;
+    border-radius: 30px;
+    
+}
+.modalBtn:hover{
+    background-color: rgb(249, 253, 250);
+    color: rgb(48, 104, 42);
+}

@@ -45,7 +45,6 @@ export class Home extends Component {
                         fontSize: '18px',
                       }}
                     >
-                      {' '}
                       The ketogenic diet is a very low carb, high fat diet that
                       shares many similarities with the Atkins and low carb
                       diets. It involves drastically reducing carbohydrate
@@ -107,7 +106,6 @@ export class Home extends Component {
             “Eat well as your body deserves it”
           </h1>
         </div>
-        {/* <h2 style={{ marginLeft: "4%", marginTop: "20px", fontFamily: "'Roboto', sans-serif", fontWeight: "bold" }}>Keto Benefits</h2> */}
         <div
           style={{
             marginLeft: '4%',
@@ -126,7 +124,7 @@ export class Home extends Component {
               >
                 <Card.Img
                   variant='top'
-                  src='https://pixabay.com/get/gebc34b53769d8244aa9fc792bb937d25644644f22b86c071561be0eac99c1844fb62077f79176d9ff184f5f4ce43575d_1280.jpg'
+                  src='https://www.tricitymed.org/wp-content/uploads/2018/01/shutterstock_627075779-300x200.jpg'
                 />
                 <Card.Body>
                   <Card.Title
