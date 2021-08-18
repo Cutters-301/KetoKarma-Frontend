@@ -129,7 +129,7 @@ export class Nutrition extends Component {
                             <Col className="col2">
                                 <Card.Body>
                                     <Card.Text>
-                                        <h4 style={{ marginRight: '45%' }} className="nameD">Doctor Faten Marji</h4>
+                                        <h4 style={{ marginRight: '39%' }} className="nameD">Doctor Faten Marji</h4>
                                         <p style={{ marginRight: '70%' }} className="titleD">Nutritionist</p>
                                         <Row>
                                             <Col className="colD">
@@ -144,7 +144,7 @@ export class Nutrition extends Component {
                                                 <img className="logoD" src={Logo2} alt="" />
                                             </Col>
                                             <Col>
-                                                <p style={{ marginRight: '45%' }} className="details d2">Khaldi Street : ibn khaldon</p>
+                                                <p style={{ marginRight: '34%' }} className="details d2">Khaldi Street : ibn khaldon</p>
                                             </Col>
                                         </Row>
                                         <Row>
@@ -179,7 +179,7 @@ export class Nutrition extends Component {
                             <Col className="col2">
                                 <Card.Body>
                                     <Card.Text>
-                                        <h4 style={{ marginRight: '30%' }} className="nameD">Nutritionist Dieaa Hindi</h4>
+                                        <h4 style={{ marginRight: '20%' }} className="nameD">Nutritionist Dieaa Hindi</h4>
                                         <p style={{ marginRight: '75%' }} className="titleD">Dietitian</p>
                                         <Row>
                                             <Col className="colD">
@@ -194,7 +194,7 @@ export class Nutrition extends Component {
                                                 <img style={{ marginTop: '10%' }} className="logoD" src={Logo2} alt="" />
                                             </Col>
                                             <Col>
-                                                <p style={{ marginRight: '45%' }} className="details d2">Tabarbour : tareq street </p>
+                                                <p style={{ marginRight: '35%' }} className="details d2">Tabarbour : tareq street </p>
                                             </Col>
                                         </Row>
                                         <Row>
@@ -229,7 +229,7 @@ export class Nutrition extends Component {
                             <Col className="col2">
                                 <Card.Body>
                                     <Card.Text>
-                                        <h4 style={{ marginRight: '35%' }} className="nameD">Doctor ragad aloqaile</h4>
+                                        <h4 style={{ marginRight: '29%' }} className="nameD">Doctor ragad aloqaile</h4>
                                         <p style={{ marginRight: '70%' }} className="titleD">Nutritionist</p>
                                         <Row>
                                             <Col className="colD">
@@ -279,7 +279,7 @@ export class Nutrition extends Component {
                             <Col className="col2">
                                 <Card.Body>
                                     <Card.Text>
-                                        <h4 style={{ marginRight: '10%' }} className="nameD">Nutritionist Mohammad Ashqar</h4>
+                                        <h4 style={{ marginRight: '-3.2%' }} className="nameD">Nutritionist Mohammad Ashqar</h4>
                                         <p style={{ marginRight: '70%' }} className="titleD">Nutritionist</p>
                                         <Row>
                                             <Col className="colD">
@@ -294,7 +294,7 @@ export class Nutrition extends Component {
                                                 <img className="logoD" src={Logo2} alt="" />
                                             </Col>
                                             <Col>
-                                                <p style={{ marginRight: '45%' }} className="details d2">Tla Al Ali : madina street</p>
+                                                <p style={{ marginRight: '32%' }} className="details d2">Tla Al Ali : madina street</p>
                                             </Col>
                                         </Row>
                                         <Row>
@@ -329,7 +329,7 @@ export class Nutrition extends Component {
                             <Col className="col2">
                                 <Card.Body>
                                     <Card.Text>
-                                        <h4 style={{ marginRight: '30%' }} className="nameD">Nutritionist Dima Kilani</h4>
+                                        <h4 style={{ marginRight: '21%' }} className="nameD">Nutritionist Dima Kilani</h4>
                                         <p style={{ marginRight: '75%' }} className="titleD">Dietitian</p>
                                         <Row>
                                             <Col className="colD">
@@ -341,15 +341,15 @@ export class Nutrition extends Component {
                                         </Row>
                                         <Row>
                                             <Col className="colD">
-                                                <img style={{ marginTop: '10%' }} className="logoD" src={Logo2} alt="" />
+                                                <img style={{ marginTop: '15%' }} className="logoD" src={Logo2} alt="" />
                                             </Col>
                                             <Col>
-                                                <p style={{ marginRight: '50%' }} className="details d2">Khilda : Amman</p>
+                                                <p style={{ marginRight: '55%' }} className="details d2">Khilda : Amman</p>
                                             </Col>
                                         </Row>
                                         <Row>
                                             <Col className="colD">
-                                                <img style={{ marginTop: '50%' }} className="logoD imgT" src={Logo3} alt="" />
+                                                <img style={{ marginTop: '35%' }} className="logoD imgT" src={Logo3} alt="" />
                                             </Col>
                                             <Col>
                                                 <p className="details d3">06 500 1616</p>
