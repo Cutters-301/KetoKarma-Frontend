@@ -4,7 +4,7 @@ import ReactPlayer from "react-player";
 export class Laptop extends Component {
     render() {
         return (
-            <div style={{marginRight:"30%"}}>
+            <div style={{marginLeft:"20%" , marginTop:"5px"}} >
                  <div className='container'>
           <div className='mockup mockup-macbook loaded opened'>
             <div className='part top'>
