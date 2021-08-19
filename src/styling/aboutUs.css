@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,500");
+.aboutUs {
+  /* background-image: url('');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    opacity: 0.8; */
+}
+.aboutUs div {
+  margin-top: 20px;
+}
+.title {
+  width: 80%;
+  text-align: center;
+  border-bottom: 1px solid grey;
+  line-height: 0.1em;
+  margin-left: 10%;
+  margin-top: 70px;
+  font-family: "Proza Libre", sans-serif;
+  font-weight: bold;
+}
+
+.title span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+.aboutUs p {
+  margin-top: 60px;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: "Style Script", cursive;
+  font-size: 20px;
+  line-height: 40px;
+  color: #3e4555;
+}
+
+.team h1 {
+  margin-top: 120px;
+}
+
+.team4 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+  padding-top: 80px;
+}
+
+.team4 h5,
+.team4 h6 {
+  color: #3e4555;
+}
+.team4 p {
+  margin-top: -20px;
+  padding-top: 20px;
+}
+
+.team4 .font-weight-medium {
+  font-weight: 800;
+}
+
+.team4 h5 {
+  line-height: 22px;
+  font-size: 23px;
+  margin-top: -50px;
+}
+
+.team4 .subtitle {
+  color: #8d97ad;
+  line-height: 50px;
+  font-size: 16px;
+}
+
+.img-fluid {
+  -webkit-transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+.img-fluid:hover {
+  -webkit-transform: translate3d(0px, -5px, 0px);
+  transform: translate3d(0px, -20px, 0px);
+}
+.contact {
+  width: 100px;
+  height: 100px;
+  padding-right: 15px;
+  padding-top: 18px;
+  margin-left: 15px;
+  -webkit-transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.contact:hover {
+  -webkit-transform: translate3d(0px, -5px, 0px);
+  transform: translate3d(0px, -5px, 0px);
+}

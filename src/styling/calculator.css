@@ -1,0 +1,319 @@
+:root {
+    --blue-border: #5a84b6;
+    --blue-color: #96dcee;
+    --yellow-background: #96dcee;
+    --yellow-border: #5a84b6;
+    --indigo-border: #fa479a;
+    --indigo-color: #ff84d1;
+    --gray-border: #fa479a;
+
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--blue-background);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: all 250ms ease-in;
+  }
+  
+  .toggle--checkbox {
+    display: none;
+  
+  }
+
+  .toggle--checkbox:checked ~ .background {
+    background: var(--indigo-background);
+  }
+  .toggle--checkbox:checked + .toggle--label {
+    background: var(--indigo-color);
+    border-color: var(--indigo-border);
+
+  }
+  .toggle--checkbox:checked + .toggle--label .toggle--label-background {
+    left: 60px;
+    width: 5px;
+  }
+  .toggle--checkbox:checked + .toggle--label .toggle--label-background:before {
+    width: 5px;
+    height: 5px;
+    top: -25px;
+  }
+ 
+  .toggle--checkbox:checked + .toggle--label:before {
+    background: var(--white);
+    border-color: var(--gray-border);
+    animation-name: switch;
+    animation-duration: 350ms;
+    animation-fill-mode: forwards;
+  }
+  .toggle--checkbox:checked + .toggle--label:after {
+    transition-delay: 350ms;
+    opacity: 1;
+  }
+  .toggle--label {
+    /** Placeholder element, starting at blue **/
+    margin-top:4%;
+
+    width: 100px;
+    height: 45px;
+    background: var(--blue-color);
+    border-radius: 100px;
+    border: 5px solid var(--blue-border);
+    display: flex;
+    position: relative;
+    transition: all 350ms ease-in;
+    /** The sun cloud and moon stars **/
+    /** Sun/Moon element **/
+    /** Gray dots on the moon **/
+  }
+  .toggle--label-background {
+    width: 10px;
+    height: 5px;
+    border-radius: 5px;
+    position: relative;
+    background: var(--white);
+    left: 150px;
+    top: 45px;
+    transition: all 150ms ease-in;
+  }
+  .toggle--label-background:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background: var(--white);
+    left: -20px;
+    transition: all 150ms ease-in;
+  }
+  .toggle--label-background:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background: var(--white);
+    left: -10px;
+    transition: all 150ms ease-in;
+  }
+  .toggle--label:before {
+    animation-name: reverse;
+    animation-duration: 350ms;
+    animation-fill-mode: forwards;
+    transition: all 350ms ease-in;
+    content: "";
+    width: 25px;
+    height: 25px;
+    border: 5px solid var(--yellow-border);
+    top: 4px;
+    left: 4px;
+    position: absolute;
+    border-radius: 50%;
+    background: var(--yellow-background);
+  }
+  .toggle--label:after {
+    transition-delay: 0ms;
+    transition: all 250ms ease-in;
+    position: absolute;
+    content: "";
+    box-shadow: var(--gray-dots) -13px 0 0 2px, var(--gray-dots) -24px 14px 0 -2px;
+    left: 1px;
+    top: 23px;
+    background: transparent;
+    border-radius: 50%;
+    opacity: 0;
+  }
+  
+  @keyframes switch {
+    0% {
+      left: 4px;
+    }
+    60% {
+      left: 4px;
+      width:90px;
+    }
+    100% {
+      left: 60px;
+      width: 25px;
+    }
+  }
+  @keyframes reverse {
+    0% {
+      left: 90px;
+      width: 0px;
+    }
+    60% {
+      left: 72px;
+      width: 20px;
+    }
+    100% {
+      left: 4px;
+    }
+  }
+  .MuiFormControlLabel {
+    margin-left: 17px;
+    margin-right: 213px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .font{
+      font-size:20px;
+      margin-bottom:10px;
+      margin-top:20px;
+  }
+
+  .hr1 {
+    border-top: 10px solid #F82716;
+    border-radius: 10px;
+    width: 500px;
+    display: inline-block;
+
+  }
+
+  .hr2 {
+    border-top: 10px solid #FBD704;
+    border-radius: 10px;
+    width: 50px;
+
+  }
+  .hr3 {
+    border-top: 10px solid #10D8B8;
+    border-radius: 10px;
+    width: 125px;
+ 
+  }
+  .hr4 {
+    border-top: 10px solid #3C6FAA;
+    border-radius: 10px;
+    width: 350px;
+ 
+  }
+  .result{
+    border: 5px solid rgb(92, 83, 83);
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 80%;
+  }
+.line1{
+    display: inline-block;
+    margin-right: 40%;
+}
+hr1:after {
+    background: #fff;
+    content: 'Calories';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
+.toggle--label , .left, .right, .gender{
+    float: left; 
+    margin:10px;
+    font-size: 20px;
+}
+
+.left, .right, .gender{
+    margin-top:2%;
+    font-family: 'Georama', sans-serif;
+    font-weight: bold;
+}
+
+.gender{
+    margin-right: 8%
+}
+
+.pa1, .hr1{
+ float: left; 
+ margin: 15px;
+}
+
+.pa2, .hr2{
+    float: left; 
+    margin: 15px;
+    
+   }
+
+   .pa3, .hr3{
+    float: left; 
+    margin: 25px;
+    margin-left: 13px;
+   }
+
+   .pa4, .hr4{
+    float: left; 
+    margin: 35px;
+    margin-left: -269px;
+   }
+
+   .pa3 {
+    margin-left: 5px;
+    margin-top: 1%;
+   }
+
+  .pa4{
+    margin-left: 0px;
+
+  }
+  .para {
+    margin-top: 40px;
+    float: left;
+    margin-left: -509px;
+  }
+  .result{
+      padding-left: 25px;
+      padding-bottom: 40px;
+      font-family: 'Georama', sans-serif;
+      font-weight: bold;
+      font-size: 20px
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Georama:wght@100&display=swap');
+
+  .MuiTypography-body1{
+    font-family: 'Georama', sans-serif !important;
+    font-weight: bold !important;
+  }
+  p.pa1 {
+    margin-top: 1%;
+}
+p.pa2 {
+    margin-top: 0.5%;
+}
+.calcHead{
+    margin-top: 2%;
+    font-family: 'Georama', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 3%;
+}
+
+.form-control{
+    font-weight: bold !important;
+}
+
+.calcInto{
+    font-size: 20px;
+    font-family: 'Lora', serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+.containerG{
+    margin-top: 2%;
+   margin-left: 38.5%;
+}
