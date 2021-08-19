@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../styling/Footer.css'
-
+import Logo from '../assets/log.png'
 
 export class Footer extends Component {
     render() {
@@ -14,7 +14,7 @@ export class Footer extends Component {
                                 <p class="text-justify"> <span> KetoKarma </span> Is a Diet Platform That Help You To Be Healthy In Your Life Style.</p>
                                 <input class="bar" type="text" value="" placeholder="Search ..." />
                                 <input class="search" type="button" value="Search" /> <br />
-                                {/* <img src={ Logo } alt="Keto" /> */}
+                                <img src={ Logo } alt="Keto" style ={{width:'300px',height:'300px', 'margin-bottom': '-17%', 'margin-top': '-5%', 'margin-right': '44%'}} />
                             </div>
 
                             <div class="col-xs-6 col-md-3">
@@ -29,13 +29,9 @@ export class Footer extends Component {
                             <div class="col-xs-6 col-md-3">
                                 <h6>Quick Links</h6>
                                 <ul class="footer-links">
-
-                                
-
                                     <li class="ref"> <a href="/aboutUs" >About Us</a></li>
                                     <li class="ref"> <a href="/recipe" >Recipes</a></li>
                                     <li class="ref"><a href="/" >Home</a></li>
-                                    {/* <li class="ref"><Link to="/faqs" ><a href={() => false}>FAQs</a></Link></li> */}
                                     <li class="ref"><a href="/#">LogOut</a></li>
                                 </ul>
                             </div>

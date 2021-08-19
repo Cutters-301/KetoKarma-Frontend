@@ -62,18 +62,18 @@
 .modalBtn {
     width: 25%;
     height: 100px;
-    margin-top: 20px;
+    margin-bottom: 50px;
     margin-left: 38%;
     font-size: 30px;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
-    background-color: rgb(102, 231, 113);
-    color: rgb(249, 253, 250);
-    border: none;
+    background-color: rgb(102, 231, 113) !important;
+    color: rgb(249, 253, 250) !important;
+    border: none !important;
     border-radius: 30px;
     
 }
 .modalBtn:hover{
-    background-color: rgb(249, 253, 250);
-    color: rgb(48, 104, 42);
+    background-color: rgb(249, 253, 250) !important;
+    color: rgb(48, 104, 42) !important;
 }

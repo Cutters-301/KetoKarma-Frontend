@@ -6,7 +6,10 @@ import Background from '../assets/bayan.jpg';
 export class AboutUs extends Component {
     render() {
         return (
-            <div>
+
+
+            <div >
+
                 <div className="aboutUs">
                     <div className="mission">
                         <h1 className="title"><span>Our Mission</span></h1>

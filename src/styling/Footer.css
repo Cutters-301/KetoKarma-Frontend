@@ -40,13 +40,14 @@
 }
 
 .footer-links {
-  padding-left: 0;
+  margin-left: -10%;
   
 }
 
 .footer-links .ref {
   display: block;
   list-style: none;
+  margin-left: 7%;
 }
 
 .footer-links a {
