@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { Card, Row, Col, Carousel } from 'react-bootstrap';
-import Header from '../component/Header';
-import Footer from '../component/Footer';
 import Laptop from '../component/laptop';
 
 
@@ -31,6 +29,7 @@ export class Home extends Component {
               border: 'none',
               marginLeft: '4%',
               marginTop: '15px',
+              backgroundColor:'whitesmoke'
             }}
           >
             <Row>
@@ -42,9 +41,12 @@ export class Home extends Component {
                       style={{
                         fontFamily: "'Style Script',cursive",
                         fontSize: '18px',
+                        "line-height":'35px',
+                        marginTop:"-30px",
+                    
                       }}
                     >
-                      The ketogenic diet is a very low carb, high fat diet that
+                      The keto diet is a very low carb, high fat diet that
                       shares many similarities with the Atkins and low carb
                       diets. It involves drastically reducing carbohydrate
                       intake and replacing it with fat. This reduction in carbs
@@ -68,13 +70,77 @@ export class Home extends Component {
               </Col>
             </Row>
           </Card>
+          <Card
+            style={{
+              width: '90%',
+              height: '40rem',
+              margin: '5%',
+              border: 'none',
+              marginLeft: '4%',
+              marginTop: '15px',
+              backgroundColor:'whitesmoke'
+            }}
+          >
+            <Row>
+              <Col>
+                <Card.Body>
+                  <Card.Title></Card.Title>
+                  <Card.Img
+                  style={{ height: '50rem' }}
+                  variant='top'
+                  src='https://images.unsplash.com/photo-1505576399279-565b52d4ac71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+                />
+                </Card.Body>
+              </Col>
+              <Col>
+              <Card.Text>
+              <h2
+            style={{
+              marginLeft: '2%',
+              marginTop: '50px',
+              fontFamily: "'Roboto', sans-serif",
+              fontWeight: 'bold',
+            }}
+          >
+            How to Follow the Ketogenic Diet
+          </h2>
+                    <p
+                      style={{
+                        fontFamily: "'Style Script',cursive",
+                        fontSize: '18px',
+                        "line-height":'55px',
+                        marginTop:"-1px"
+
+                      }}
+                    >
+                      There are several types of keto, but essentially,
+                       to achieve a state of ketosis, you have to severely reduce the amount of carbs you eat.
+                       (You can use a keto calculator to create a custom food plan.)
+                        Data suggest the average American man age 20 or older consumes 46.4 percent of his daily calories from carbs, 
+                        and the average American woman older than 20 consumes 48.2 percent of her daily calories from carbs.
+                        right up arrow But in the classic ketogenic diet, which was originally used to manage seizure disorders,
+                         80 to 90 percent of calories come from fat, 5 to 15 percent come from protein, and 5 to 10 percent come from carbohydrates.
+                         Some of the aims of the latest version of the keto karma diet are weight loss, weight management, and improved athletic performance.
+                    </p>
+                  </Card.Text>
+              </Col>
+            </Row>
+          </Card>
+         
         </div>
-        <div className='laptop'>
-          <Laptop />
-        </div>
         <br />
         <br />
         <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      
         <div>
           <img
             style={{ float: 'right' }}
@@ -105,6 +171,9 @@ export class Home extends Component {
             “Eat well as your body deserves it”
           </h1>
         </div>
+        <div style={{ backgroundImage:"url('https://images.unsplash.com/photo-1543339308-43e59d6b73a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80')" ,backgroundSize:"cover",width:"100%"}} className="laptop">
+            <Laptop />
+          </div>
         <div
           style={{
             marginLeft: '4%',
@@ -123,7 +192,7 @@ export class Home extends Component {
               >
                 <Card.Img    style={{ height: '190px' }}
                   variant='top'
-                  src='https://images.unsplash.com/photo-1561043433-aaf687c4cf04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80'
+                  src='https://images.unsplash.com/photo-1589733955941-5eeaf752f6dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60'
                 />
                 <Card.Body>
                   <Card.Title
@@ -158,7 +227,7 @@ export class Home extends Component {
                 <Card.Img
                   style={{ height: '190px' }}
                   variant='top'
-                  src='https://images.unsplash.com/photo-1533622597524-a1215e26c0a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80'
+                  src='https://images.unsplash.com/photo-1479150928156-423a69d91fe0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60'
                 />
                 <Card.Body>
                   <Card.Title
@@ -193,7 +262,7 @@ export class Home extends Component {
                 <Card.Img
                   style={{ height: '190px' }}
                   variant='top'
-                  src='https://293761-902116-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2019/07/Foods-that-lower-bP-smaller-image_shutterstock_779596747-1024x768.jpg'
+                  src='https://res.cloudinary.com/grohealth/image/upload/f_auto,fl_lossy,q_auto/v1583749601/DCUK/Content/Diet-and-Cholesterol.png'
                 />
                 <Card.Body>
                   <Card.Title
@@ -226,7 +295,7 @@ export class Home extends Component {
               >
                 <Card.Img
                   variant='top'
-                  src='https://static.parade.com/wp-content/uploads/2021/02/foods-that-lower-cholesterol.jpg'
+                  src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW-vfL5vEGmLBB-HSooY9dakPRQN1OJR73bdEJHk5dZkxKI0Z_O-iFiKH4ILin8j8iqvM&usqp=CAU'
                 />
                 <Card.Body>
                   <Card.Title

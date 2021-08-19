@@ -38,9 +38,10 @@ export class Recipes extends Component {
           
                 <div class='recipe'>
                     {console.log('recipe', this.state.recipeData)}
-                    <p class="title-recipe"> Recipes</p>
+                    <center>
                         <img src="https://image.flaticon.com/icons/png/512/1830/1830878.png"
-                      alt="" style={{width:'200px',height:"150px","margin-top":"20px"}}  />            
+                      alt="" style={{width:'200px',height:"150px","margin-top":"20px"}}  />   
+                      </center>         
                     <body>
                         <div class="box">
                             <form name="search" onSubmit={this.submitForm}>
