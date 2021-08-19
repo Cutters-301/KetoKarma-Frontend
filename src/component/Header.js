@@ -21,7 +21,7 @@ class Header extends Component {
          
         <div id='navbar'>
         <div className="img" style = {{float: 'left' , marginRight: '-14%'}} >
-          <img src={Logo} alt="logo" style = {{width: '200px', height:'200px', 'margin-left':'-303%', 'margin-top': '-16%'}} />
+          <img src={Logo} alt="logo" style = {{width: '210px', height:'210px', 'margin-left':'-290%', 'margin-top': '-16%'}} />
           </div>
           <div>
         

@@ -38,6 +38,7 @@ body {
   margin-left: 10px;
   column-count: 1;
   text-align: left;
+  margin-top: 15px;
 }
 li {
   font-size: 13px;
@@ -69,7 +70,7 @@ h3:after {
   content: "";
   display: block;
   width: 0%;
-  padding-top: 10px;
+  padding-top: 5px;
   margin: 0 auto;
   border-bottom: 5px solid #eb9376;
   transition: width 250ms ease-in-out 0s;

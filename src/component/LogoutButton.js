@@ -7,7 +7,7 @@ const LogoutButton = () => {
 
   return (
     isAuthenticated &&
-    <button  style={{marginRight:"100%",position:"absolute",marginTop:"30px",marginLeft:"35px", borderBlockStyle:"groove" , backgroundColor:"#fff9c4" }} onClick={() => logout({ returnTo: window.location.origin })}>
+    <button  style={{marginRight:"100%",position:"absolute",marginTop:"30px",marginLeft:"20px", borderBlockStyle:"groove" , backgroundColor:"#fff9c4" }} onClick={() => logout({ returnTo: window.location.origin })}>
     <GoSignOut /> Log out
     </button>
   );
