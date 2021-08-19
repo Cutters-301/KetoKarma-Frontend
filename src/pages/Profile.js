@@ -172,7 +172,7 @@ class Profile extends React.Component {
               this.state.plans.map((plan, id) => (
                 <tbody style={{borderColor:"black" , fontSize:"14px"}}>
                   <tr  style={{backgroundColor:"rgba(146, 240, 151, 0.6)"}}>
-                    <td >Day{id}</td>
+                    <td >Day{id+1}</td>
                     <td >{plan.Breakfast}</td>
                     <td   >{plan.Lunch}</td>
                     <td   >{plan.Dinner}</td>
