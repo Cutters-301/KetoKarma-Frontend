@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Team1 from '../assets/MyProfile-Image.jpeg';
 import '../styling/aboutUs.css';
 import Background from '../assets/bayan.jpg';
-import Omaima from '../assets/omaima.jpg';
+// import Omaima from '../assets/omaima.jpg';
 
 export class AboutUs extends Component {
     render() {
@@ -79,7 +79,7 @@ We are committed to building a community rooted in positivity and support, celeb
 
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <img src={Omaima} alt="wrapkit" class="img-fluid rounded-circle" style={{height:"60%",width:"95%","object-fit": "cover"}} />
+                                                <img src="https://avatars.githubusercontent.com/u/83533439?s=400?v=4" alt="wrapkit" class="img-fluid rounded-circle" style={{height:"60%",width:"95%","object-fit": "cover"}} />
                                             </div>
                                             <div class="col-md-12 text-center" style={{marginTop:"-59%"}}>
                                                 <div class="pt-2">
